@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros - Dibiagi Transporte</title>
+
+    <!-- Meta SEO -->
+    <meta
+      name="description"
+      content="Conozca la trayectoria de más de 60 años de Dibiagi Transporte, líderes en logística internacional y transporte de cargas."
+    />
+    <meta
+      name="keywords"
+      content="nosotros, historia, trayectoria, logística, Dibiagi, transporte internacional"
+    />
+    <link rel="canonical" href="https://www.dibiagi.com.ar/nosotros.html" />
+    <link rel="icon" type="image/png" href="img/favicon-dibiagi.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.dibiagi.com.ar/nosotros.html" />
+    <meta property="og:title" content="Nosotros - Dibiagi Transporte" />
+    <meta property="og:description" content="Conozca la trayectoria de más de 60 años de Dibiagi Transporte, líderes en logística internacional." />
+    <meta property="og:image" content="https://www.dibiagi.com.ar/img/nosotros/Nosotros.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.dibiagi.com.ar/nosotros.html" />
+    <meta property="twitter:title" content="Nosotros - Dibiagi Transporte" />
+    <meta property="twitter:description" content="Más de 60 años de excelencia en transporte y logística." />
+    <meta property="twitter:image" content="https://www.dibiagi.com.ar/img/nosotros/Nosotros.jpg" />
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/timeline-circular.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Barra superior con logo y contactos -->
+      <div class="header-top-bar">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center py-2">
+            <!-- Logo -->
+            <a href="index.html" class="header-logo-link">
+              <img
+                src="img/index/logo-hero.png"
+                alt="DIBIAGI"
+                class="img-fluid header-logo"
+              />
+            </a>
+            <!-- Contactos -->
+            <div class="header-contacts d-none d-md-flex align-items-center">
+              <div class="lang-selector me-4 pe-4 border-end">
+                <img src="img/index/argentina.png" alt="ES" class="lang-flag" onclick="changeLanguage('es')" title="Español">
+                <img src="https://flagcdn.com/w40/us.png" alt="EN" class="lang-flag" onclick="changeLanguage('en')" title="English">
+              </div>
+              <div class="contact-item">
+                <span class="contact-label" data-i18n="header-llamanos">Llamanos en Argentina al</span>
+                <a href="tel:+542615873045" class="contact-phone"
+                  >261 5873045</a
+                >
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Chile:</span>
+                <a href="tel:+56342423571" class="contact-phone-small"
+                  >+56 342 423571</a
+                >
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Uruguay:</span>
+                <a href="tel:+59824813006" class="contact-phone-small"
+                  >+598 2481 3006</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Barra de navegación roja -->
+      <nav class="navbar navbar-expand-lg navegador">
+        <div class="container">
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" data-i18n="nav-inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transporte.html" data-i18n="nav-transporte"
+                  >Transporte de cargas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="deposito.html" data-i18n="nav-deposito">Depósito logístico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="nosotros.html" data-i18n="nav-nosotros"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item pe-lg-3">
+                <a class="nav-link" href="contacto.html" data-i18n="nav-contacto">Contacto</a>
+              </li>
+              <!-- Selector de idioma móvil -->
+              <li class="nav-item d-lg-none py-3 border-top">
+                <div class="lang-selector justify-content-center">
+                  <img src="img/index/argentina.png" alt="ES" class="lang-flag" onclick="changeLanguage('es')">
+                  <img src="https://flagcdn.com/w40/us.png" alt="EN" class="lang-flag" onclick="changeLanguage('en')">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-nosotros position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 text-white">
+              <!-- El contenido del hero puede estar vacío o tener un pequeño badge si se desea, 
+                   pero la imagen grupal es la protagonista absoluta según el diseño. -->
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://wa.me/5492615873045"
+          target="_blank"
+          class="btn-wpp-floating-hero shadow-lg"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <!-- Flags Section -->
+      <div class="flags-section">
+        <div class="container">
+          <div class="d-flex justify-content-center gap-3">
+            <div
+              class="flag-wrapper"
+              data-bs-toggle="tooltip"
+              title="Argentina"
+            >
+              <img
+                src="img/index/argentina.png"
+                alt="Argentina"
+                class="flag-icon"
+              />
+            </div>
+            <div class="flag-wrapper" data-bs-toggle="tooltip" title="Chile">
+              <img src="img/index/chile.png" alt="Chile" class="flag-icon" />
+            </div>
+            <div class="flag-wrapper" data-bs-toggle="tooltip" title="Paraguay">
+              <img
+                src="img/index/paraguay.png"
+                alt="Paraguay"
+                class="flag-icon"
+              />
+            </div>
+            <div class="flag-wrapper" data-bs-toggle="tooltip" title="Uruguay">
+              <img
+                src="img/index/uruguay.png"
+                alt="Uruguay"
+                class="flag-icon"
+              />
+            </div>
+            <div class="flag-wrapper" data-bs-toggle="tooltip" title="Brasil">
+              <img src="img/index/brasil.png" alt="Brasil" class="flag-icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section: Nosotros Historia -->
+      <section class="feature-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <h2 class="feature-title" data-i18n="nos-title">Nosotros</h2>
+              <p class="feature-text" data-i18n="nos-desc-1">
+                Somos una empresa de logística cuya operatoria integral se
+                encuentra avalada por una trayectoria de
+                <strong>más de 60 años</strong> al servicio de nuestros
+                clientes.
+              </p>
+              <p class="feature-text" data-i18n="nos-desc-2">
+                Dibiagi Transporte Internacional junto a Multimodal SACIA, PTM
+                (Puerto Terrestre Mendoza), Flota del Pacífico, Meltesur, MIL y
+                Docwell Rental conforman un sólido grupo que desarrolla tareas
+                de logística internacional y nacional como así también
+                distribuciones dentro de los territorios de Argentina, Chile,
+                Uruguay, Paraguay y Brasil.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="feature-img-wrapper"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                <img
+                  src="img/nosotros/Nosotros.jpg"
+                  alt="Historia Dibiagi"
+                  class="feature-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Mision, Vision, Valores -->
+      <section class="valores-section py-5 bg-light">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Misión -->
+            <div class="col-lg-4">
+              <div
+                class="service-card shadow h-100 text-center p-4"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                <div class="mb-4">
+                  <img
+                    src="img/nosotros/mision.png"
+                    alt="Misión"
+                    class="img-fluid"
+                    data-i18n="nos-mision"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Visión -->
+            <div class="col-lg-4">
+              <div
+                class="service-card shadow h-100 text-center p-4"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="400"
+              >
+                <div class="mb-4">
+                  <img
+                    src="img/nosotros/vision.png"
+                    alt="Visión"
+                    class="img-fluid"
+                    data-i18n="nos-vision"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Valores -->
+            <div class="col-lg-4">
+              <div
+                class="service-card shadow h-100 text-center p-4"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="600"
+              >
+                <div class="mb-4">
+                  <img
+                    src="img/nosotros/valores.png"
+                    alt="Valores"
+                    class="img-fluid"
+                    data-i18n="nos-valores"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Timeline Vertical con SVG Animado -->
+      <section class="timeline-vertical-section" id="timeline-section">
+        <div class="timeline-vertical-container">
+          <h2 class="section-title" data-i18n="nos-timeline-title">Nuestra Historia</h2>
+          
+          <div class="timeline-wrapper">
+            <!-- Línea SVG animada -->
+            <svg class="timeline-line-svg" preserveAspectRatio="none">
+              <line class="timeline-line-bg" x1="50%" y1="0" x2="50%" y2="100%"></line>
+              <line class="timeline-line-progress" x1="50%" y1="0" x2="50%" y2="100%"></line>
+            </svg>
+            
+            <!-- Eventos del Timeline -->
+            <div class="timeline-events">
+              <!-- 1961 -->
+              <div class="timeline-event">
+                <span class="timeline-date">1961</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-1961-t">Fundación de Dibiagi</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-1961-d">Luis Dibiagi sienta las bases del grupo profesionalizando el transporte en la provincia de Mendoza. Comienza la empresa con transporte de cargas nacionales.</p>
+                </div>
+              </div>
+              
+              <!-- 1983 -->
+              <div class="timeline-event">
+                <span class="timeline-date">1983</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-1983-t">Expansión Internacional</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-1983-d">Dibiagi obtiene el permiso para realizar transporte de cargas internacionales entre Argentina y Chile, marcando el inicio de su expansión regional.</p>
+                </div>
+              </div>
+              
+              <!-- 1992 -->
+              <div class="timeline-event">
+                <span class="timeline-date">1992</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-1992-t">Flota del Pacífico</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-1992-d">Creación de FLOTA DEL PACÍFICO – Unidad de negocios establecida en Chile dedicada exclusivamente al transporte de cargas internacionales transandinas.</p>
+                </div>
+              </div>
+              
+              <!-- 1995 -->
+              <div class="timeline-event">
+                <span class="timeline-date">1995</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-1995-t">Multimodal SACIA</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-1995-d">Creación de Multimodal SACIA – Unidad estratégica destinada al almacenamiento, logística y tratamiento integral de cargas en depósito.</p>
+                </div>
+              </div>
+              
+              <!-- 1998 -->
+              <div class="timeline-event">
+                <span class="timeline-date">1998</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-1998-t">Mercosur - Uruguay</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-1998-d">Expansión del Mercosur: Dibiagi obtiene los permisos necesarios para iniciar operaciones de transporte internacional con Uruguay.</p>
+                </div>
+              </div>
+              
+              <!-- 2000 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2000</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2000-t">Nueva Sede Central</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2000-d">La empresa consolida su operativa trasladando sus instalaciones centrales a la sede actual en Rodríguez Peña 169, un punto clave logístico.</p>
+                </div>
+              </div>
+              
+              <!-- 2003 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2003</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2003-t">Diversificación Agrícola</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2003-d">Diversificación productiva: Adquisición de LA ALAMEDA RIOJANA e integración de LA CELINA para el cultivo premium de vides y olivos.</p>
+                </div>
+              </div>
+              
+              <!-- 2005 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2005</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2005-t">Terminal Buenos Aires</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2005-d">Apertura de oficina estratégica y terminal de cargas en la Ciudad de Buenos Aires para fortalecer la conectividad puerto-empresa.</p>
+                </div>
+              </div>
+              
+              <!-- 2009 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2009</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2009-t">MELTESUR</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2009-d">Creación de MELTESUR – Unidad de negocios radicada en Uruguay para potenciar la red de transporte internacional en el cono sur.</p>
+                </div>
+              </div>
+              
+              <!-- 2010 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2010</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2010-t">Puerto Terrestre Mendoza</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2010-d">Nace PTM (PUERTO TERRESTRE MENDOZA) – Inauguración de la Zona Primaria Aduanera para agilizar el comercio exterior.</p>
+                </div>
+              </div>
+              
+              <!-- 2011 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2011</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2011-t"> Docwell Rental </h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2011-d">Creación de Docwell Rental – Unidad de servicios dedicada al alquiler de vehículos especializados para el turismo y la industria.</p>
+                </div>
+              </div>
+              
+              <!-- 2014 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2014</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2014-t">Expansión a Paraguay </h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2014-d">Dibiagi continúa su crecimiento continental obteniendo permisos para realizar transporte internacional hacia Paraguay.</p>
+                </div>
+              </div>
+              
+              <!-- 2016 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2016</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2016-t">Planta de Aceite </h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2016-d">Desarrollo industrial: Comienzo de la construcción de la planta elaboradora de aceite de oliva en Lavalle, Mendoza.</p>
+                </div>
+              </div>
+              
+              <!-- 2017 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2017</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2017-t">Multimodal International Logistics</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2017-d">Lanzamiento de MIL (MULTIMODAL INTERNATIONAL LOGISTICS) – Soluciones de logística avanzada e integración multimodal.</p>
+                </div>
+              </div>
+              
+              <!-- 2018 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2018</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2018-t">Renovación de Flota</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2018-d">Compromiso con la excelencia: Renovación integral de la flota de tractores por modelos de última generación y mayor eficiencia.</p>
+                </div>
+              </div>
+              
+              <!-- 2021 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2021</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2021-t">Oliver Cooks</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2021-d">Consolidación de marca: Lanzamiento masivo al mercado de Aceite de Oliva Oliver Cooks en sus variedades Clásico e Intenso.</p>
+                </div>
+              </div>
+              
+              <!-- 2023 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2023</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2023-t">Westline Helicopters</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2023-d">Vanguardia en transporte: Lanzamiento de Westline, servicio premium de helicóptero para traslados corporativos y turísticos.</p>
+                </div>
+              </div>
+              
+              <!-- 2025 -->
+              <div class="timeline-event">
+                <span class="timeline-date">2025</span>
+                <span class="timeline-dot"></span>
+                <div class="timeline-content">
+                  <h3 class="timeline-title" data-i18n="tl-2025-t">Wolf Hard</h3>
+                  <p class="timeline-subtitle" data-i18n="tl-2025-d">Nueva unidad de negocios orientada al futuro tecnológico y la innovación disruptiva en servicios integrales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Script para animación de scroll -->
+        <script>
+          (function() {
+            const wrapper = document.querySelector('.timeline-wrapper');
+            const progressLine = document.querySelector('.timeline-line-progress');
+            const bgLine = document.querySelector('.timeline-line-bg');
+            const events = document.querySelectorAll('.timeline-event');
+            const svg = document.querySelector('.timeline-line-svg');
+            
+            if (!wrapper || !progressLine || events.length === 0) return;
+            
+            function updateTimeline() {
+              const wrapperRect = wrapper.getBoundingClientRect();
+              const wrapperHeight = wrapper.offsetHeight;
+              const windowHeight = window.innerHeight;
+              
+              // Sincronización precisa: 
+              // La línea empieza a avanzar cuando el top del contenedor entra al 40% de la pantalla
+              // Y termina cuando el bottom llega al 40% de la pantalla
+              const centerPoint = windowHeight * 0.4;
+              
+              let scrolled = centerPoint - wrapperRect.top;
+              let maxScroll = wrapperHeight; 
+              
+              let progress = Math.max(0, Math.min(1, scrolled / maxScroll));
+              
+              const lineLength = wrapperHeight;
+              
+              progressLine.style.strokeDasharray = lineLength;
+              progressLine.style.strokeDashoffset = lineLength * (1 - progress);
+              
+              bgLine.style.strokeDasharray = lineLength;
+              bgLine.style.strokeDashoffset = 0;
+              
+              // Activar eventos cuando la línea azul los toca (punto central aproximado)
+              events.forEach((event) => {
+                const eventRect = event.getBoundingClientRect();
+                if (eventRect.top < centerPoint + 10) {
+                  event.classList.add('visible');
+                } else {
+                  // Opcional: quitar visible si el usuario sube
+                  // event.classList.remove('visible'); 
+                }
+              });
+            }
+            
+            // Inicializar
+            updateTimeline();
+            
+            // Escuchar scroll con throttling
+            let ticking = false;
+            window.addEventListener('scroll', function() {
+              if (!ticking) {
+                window.requestAnimationFrame(function() {
+                  updateTimeline();
+                  ticking = false;
+                });
+                ticking = true;
+              }
+            });
+            
+            // También actualizar en resize
+            window.addEventListener('resize', updateTimeline);
+          })();
+        </script>
+      </section>
+
+
+    </main> <!-- Final de Contenido Dinámico -->
+
+    <!-- Section: Marcas strip -->
+    <section class="brands-strip-small">
+      <div class="container text-center">
+        <img src="img/index/logos-dibiagi.jpg" alt="Marcas" class="img-fluid">
+      </div>
+    </section>
+
+  </main> <!-- Final de Contenedor Principal -->
+
+      <!-- Map & Footer (Global)-->
+      <section class="map-section mt-5">
+        <div class="map-container position-relative">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.743902275142!2d-68.80643922436333!3d-32.931363871116744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0c0f287f3441%3A0xed5f96a3afa2af2f!2sDibiagi%20Transporte%20Internacional%20S.A.!5e0!3m2!1ses-419!2sar!4v1768882814140!5m2!1ses-419!2sar"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <footer id="footer" class="footer-main text-white">
+      <!-- Footer -->
+        <div class="footer-top py-5">
+          <div class="container">
+            <div class="row align-items-start">
+              <!-- Col 1: Brand & Description -->
+              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <img
+                  src="img/index/logo-footer.png"
+                  alt="Dibiagi Footer"
+                  class="img-fluid mb-3"
+                  style="max-width: 180px"
+                />
+                <p class="small opacity-75 pe-lg-4" data-i18n="footer-description">
+                  Trabajamos para ser la <strong>Empresa Líder</strong> en la
+                  prestación de servicios logísticos en Argentina y países
+                  limítrofes.
+                </p>
+              </div>
+
+              <!-- Col 2: Pages -->
+              <div class="col-lg-4 col-md-3 col-6">
+                <h5 class="fw-bold mb-4" data-i18n="footer-pages">Páginas</h5>
+                <div class="row">
+                  <div class="col-6">
+                    <ul class="list-unstyled footer-links">
+                      <li><a href="index.html" data-i18n="nav-inicio">Inicio</a></li>
+                      <li>
+                        <a href="transporte.html" data-i18n="nav-transporte">Transporte de cargas</a>
+                      </li>
+                      <li><a href="deposito.html" data-i18n="nav-deposito">Depósito logístico</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list-unstyled footer-links">
+                      <li><a href="nosotros.html" data-i18n="nav-nosotros">Nosotros</a></li>
+                      <li><a href="contacto.html" data-i18n="nav-contacto">Contacto</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Col 3: Social Icons -->
+              <div class="col-lg-4 col-md-3 col-6 text-lg-end">
+                <div
+                  class="d-flex gap-3 justify-content-lg-end social-icons fs-4"
+                >
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/company/dibiagi-transporte-internacional/"
+                    class="text-white opacity-75 hover-opacity-100"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/GrupoDibiagi/"
+                    class="text-white opacity-75 hover-opacity-100"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/grupodibiagi/"
+                    class="text-white opacity-75 hover-opacity-100"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom: Locations -->
+        <div class="footer-locations py-4">
+          <div class="container">
+            <div class="row g-4">
+              <!-- Mendoza -->
+              <div class="col-lg col-md-6">
+                <h6 class="fw-bold mb-2 text-white">Mendoza</h6>
+                <p class="small opacity-75 mb-1">
+                  Complejo de Operaciones Logísticos y Comercio Exterior
+                </p>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A./@-32.9313638,-68.8064392,17z/data=!3m1!4b1!4m5!3m4!1s0x967e0c0f287f3441:0xed5f96a3afa2af2f!8m2!3d-32.9313638!4d-68.8042504"
+                  ><p class="small opacity-75 mb-1">
+                    Rodríguez Peña 169, Luzuriaga, Maipú, Mendoza. Argentina
+                  </p></a
+                >
+                <p class="small opacity-75 mb-0">
+                  <strong>Tel:</strong> 261 5873045
+                </p>
+              </div>
+
+              <!-- Buenos Aires -->
+              <div class="col-lg col-md-6">
+                <h6 class="fw-bold mb-2 text-white">Buenos Aires</h6>
+                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
+                <a
+                  target="_blank"
+                  href="https://www.google.com.ar/maps/place/Murchison+Deposito+Fiscal/@-34.5739888,-58.3923537,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb5678f1b6c83:0xc5d4a0ffb5f4c306!8m2!3d-34.5739888!4d-58.3923537!16s%2Fg%2F12hm2mht1?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
+                  ><p class="small opacity-75 mb-1">
+                    Av. Ramón Castillo 2500 C.A.B.A., Argentina (MULTIMODAL)
+                  </p></a
+                >
+                <p class="small opacity-75 mb-0">
+                  <strong>Tel:</strong> +549 (011) 3577 0717
+                </p>
+                <p class="small opacity-75 mb-0">
+                  <strong>Tel:</strong> +54 (011) 4801 6222
+                </p>
+              </div>
+
+              <!-- Chubut -->
+              <div class="col-lg col-md-6">
+                <h6 class="fw-bold mb-2 text-white">Chubut</h6>
+                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/place/Av.+Hip%C3%B3lito+Yrigoyen+4324,+U9003+Comodoro+Rivadavia,+Chubut/@-45.8949422,-67.5420258,17z/data=!3m1!4b1!4m5!3m4!1s0xbde5ab455fafb471:0x26aa64c8419ab54d!8m2!3d-45.8949422!4d-67.5398371?shorturl=1"
+                  ><p class="small opacity-75 mb-1">
+                    Av. Hipólito Yrigoyen 4324, Comodoro Rivadavia, Chubut, Arg.
+                  </p></a
+                >
+                <p class="small opacity-75 mb-0">
+                  <strong>Tel:</strong> +54 (0297) 44 81 670
+                </p>
+              </div>
+
+              <!-- Chile -->
+              <div class="col-lg col-md-6">
+                <h6 class="fw-bold mb-2 text-white">Chile</h6>
+                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A.+Sucursal+Los+Andes+-+Chile/@-32.8315975,-70.5916638,17z/data=!3m1!4b1!4m6!3m5!1s0x9688051c8585707f:0xf7721d36314659cf!8m2!3d-32.8315975!4d-70.5916638!16s%2Fg%2F11ghff05rw?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
+                  ><p class="small opacity-75 mb-1">
+                    Av. Argentina Oriente 50 esq. Independencia, Los Andes,
+                    Chile.
+                  </p></a
+                >
+                <p class="small opacity-75 mb-0">
+                  <strong>Tel:</strong> +56 (342) 423 571 / +56 (342) 422 038 /
+                  464 654
+                </p>
+              </div>
+
+              <!-- Uruguay -->
+              <div class="col-lg col-md-6">
+                <h6 class="fw-bold mb-2 text-white">Uruguay</h6>
+                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A.+Sucursal+Uruguay/@-34.8784877,-56.1493168,17z/data=!3m1!4b1!4m6!3m5!1s0x959f81b8fc61b32d:0x30a916f4a862af24!8m2!3d-34.8784877!4d-56.1493168!16s%2Fg%2F11hdh2rf6t?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
+                  ><p class="small opacity-75 mb-1">
+                    Bvar. Batlle y Ordoñez 2925, apto 01. Montevideo, Uruguay
+                  </p></a
+                >
+                <p class="small opacity-75 mb-0">
+                  <strong>Tel:</strong> +598 2481 3000
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+      });
+    </script>
+  </body>
+</html>

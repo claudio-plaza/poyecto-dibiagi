@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dibiagi Transporte - Transporte Internacional y Logística Integrada</title>
+    <link rel="canonical" href="https://www.dibiagi.com.ar/" />
+
+
+    <!-- Meta SEO -->
+    <meta
+      name="description"
+      content="Dibiagi Transporte: Empresa líder en transporte internacional, logística y distribuciones en Argentina, Chile, Uruguay y Paraguay. Ubicados en Mendoza, brindamos soluciones integrales de carga."
+    />
+    <meta
+      name="keywords"
+      content="transporte internacional, logistica, distribucion, carga pesada, Mendoza, Argentina, Chile, Uruguay, Paraguay, Dibiagi Transporte"
+    />
+    <meta name="author" content="Dibiagi Transporte" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="img/favicon-dibiagi.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.dibiagi.com.ar/" />
+    <meta
+      property="og:title"
+      content="Dibiagi Transporte – Transporte Internacional y Logística"
+    />
+    <meta
+      property="og:description"
+      content="Líderes en transporte internacional y logística en el Cono Sur. Conecta tus cargas con Argentina, Chile, Uruguay y Paraguay."
+    />
+    <meta property="og:image" content="img/index/logo-hero.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.dibiagi.com.ar/" />
+    <meta
+      property="twitter:title"
+      content="Dibiagi Transporte – Transporte Internacional y Logística"
+    />
+    <meta
+      property="twitter:description"
+      content="Líderes en transporte internacional y logística en el Cono Sur."
+    />
+    <meta property="twitter:image" content="https://www.dibiagi.com.ar/img/index/logo-hero.png" />
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LogisticsService",
+      "name": "Dibiagi Transporte",
+      "alternateName": "Dibiagi Transporte Internacional",
+      "url": "https://www.dibiagi.com.ar/",
+      "logo": "https://www.dibiagi.com.ar/img/index/logo-hero.png",
+      "description": "Empresa líder en transporte internacional, logística y distribuciones en Argentina, Chile, Uruguay y Paraguay. Ubicados en Mendoza, brindamos soluciones integrales de carga.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rodríguez Peña 169, Luzuriaga",
+        "addressLocality": "Maipú",
+        "addressRegion": "Mendoza",
+        "postalCode": "5500",
+        "addressCountry": "AR"
+      },
+      "telephone": "+54 261 5873045",
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "sameAs": [
+        "https://www.facebook.com/GrupoDibiagi/",
+        "https://www.instagram.com/grupodibiagi/",
+        "https://www.linkedin.com/company/dibiagi-transporte-internacional/"
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Barra superior con logo y contactos -->
+      <div class="header-top-bar">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center py-2">
+            <!-- Logo -->
+            <a href="index.html" class="header-logo-link">
+              <img
+                src="img/index/logo-hero.png"
+                alt="DIBIAGI"
+                class="img-fluid header-logo"
+              />
+            </a>
+            <!-- Contactos -->
+            <div class="header-contacts d-none d-md-flex align-items-center">
+              <div class="lang-selector me-4 pe-4 border-end">
+                <img src="img/index/argentina.png" alt="ES" class="lang-flag" onclick="changeLanguage('es')" title="Español">
+                <img src="https://flagcdn.com/w40/us.png" alt="EN" class="lang-flag" onclick="changeLanguage('en')" title="English">
+              </div>
+              <div class="contact-item">
+                <span class="contact-label" data-i18n="header-llamanos">Llamanos en Argentina al</span>
+                <a href="tel:+542615873045" class="contact-phone">261 5873045</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Chile:</span>
+                <a href="tel:+56342423571" class="contact-phone-small">+56 342 423571</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Uruguay:</span>
+                <a href="tel:+59824813006" class="contact-phone-small">+598 2481 3006</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Barra de navegación roja -->
+      <nav class="navbar navbar-expand-lg navegador">
+        <div class="container">
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" data-i18n="nav-inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="transporte.html" data-i18n="nav-transporte">Transporte de cargas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="deposito.html" data-i18n="nav-deposito">Depósito logístico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html" data-i18n="nav-nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item pe-lg-3">
+                <a class="nav-link" href="contacto.html" data-i18n="nav-contacto">Contacto</a>
+              </li>
+              <!-- Selector de idioma móvil -->
+              <li class="nav-item d-lg-none py-3 border-top">
+                <div class="lang-selector justify-content-center">
+                  <img src="img/index/argentina.png" alt="ES" class="lang-flag" onclick="changeLanguage('es')">
+                  <img src="https://flagcdn.com/w40/us.png" alt="EN" class="lang-flag" onclick="changeLanguage('en')">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="hero position-relative">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-lg-6 offset-lg-6 text-white text-end">
+              <span class="badge hero-badge mb-3" data-i18n="hero-badge"
+                >Brindamos soluciones logísticas</span
+              >
+              <h1 class="display-4 fw-bold mb-0" data-i18n="hero-welcome">Dibiagi: Líder en Transporte Internacional</h1>
+              <div class="mb-4 text-end">
+                <img
+                  src="img/index/logo-hero.png"
+                  alt="logo-hero"
+                  class="img-fluid hero-logo"
+                />
+              </div>
+              <p class="lead mb-4" data-i18n="hero-desc">
+                Trabajamos para ser la <strong>Empresa Líder</strong> en la
+                prestación de servicios logísticos en Argentina y países
+                limítrofes.
+              </p>
+              <div class="d-flex justify-content-end gap-3 align-items-center">
+                <a href="#" class="btn btn-cotizar" data-i18n="hero-cotizar">Cotizar</a>
+                <a href="#nosotros-id" class="btn btn-conoce-hero" data-i18n="hero-conocer">Conocer más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://wa.me/5492615873045"
+          target="_blank"
+          class="btn-wpp-floating-hero shadow-lg"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </header>
+<!--Flags Section-->
+    <div class="flags-section">
+      <div class="container">
+        <div class="d-flex justify-content-center gap-3">
+          <div class="flag-wrapper" data-bs-toggle="tooltip" title="Argentina">
+            <img
+              src="img/index/argentina.png"
+              alt="Argentina"
+              class="flag-icon"
+            />
+          </div>
+          <div class="flag-wrapper" data-bs-toggle="tooltip" title="Chile">
+            <img src="img/index/chile.png" alt="Chile" class="flag-icon" />
+          </div>
+          <div class="flag-wrapper" data-bs-toggle="tooltip" title="Paraguay">
+            <img
+              src="img/index/paraguay.png"
+              alt="Paraguay"
+              class="flag-icon"
+            />
+          </div>
+          <div class="flag-wrapper" data-bs-toggle="tooltip" title="Uruguay">
+            <img src="img/index/uruguay.png" alt="Uruguay" class="flag-icon" />
+          </div>
+          <div class="flag-wrapper" data-bs-toggle="tooltip" title="Brasil">
+            <img src="img/index/brasil.png" alt="Brasil" class="flag-icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="nosotros-section py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <h2 class="fw-bold mb-4" id="nosotros-id" data-i18n="index-nosotros-title">Nosotros</h2>
+              <p class="text-nosotros-index" data-i18n="index-nosotros-p1">
+                Somos una empresa de logística cuya operatoria integral se
+                encuentra avalada por una trayectoria de
+                <strong>más de 60 años</strong> al servicio de nuestros
+                clientes.
+              </p>
+              <p class="mb-4 text-nosotros-index" data-i18n="index-nosotros-p2">
+                Dibiagi Transporte Internacional junto a Multimodal SACIA, PTM
+                (Puerto Terrestre Mendoza), Flota del Pacífico, Meltesur, MIL y
+                Docwell Rental conforman un sólido grupo que desarrolla tareas
+                de logística internacional y nacional como así también
+                distribuciones dentro de los territorios de Argentina, Chile,
+                Uruguay, Paraguay y Brasil.
+              </p>
+              <a href="nosotros.html" class="btn btn-conoce-blue mb-5" style="background-color: #162C80;" data-i18n="hero-conocer">Conocer más</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="video-placeholder position-relative">
+                <video
+                  src="img/index/Video Dibiagi Institucional 2023.mp4"
+                  alt="Sobre Nosotros"
+                  class="img-fluid rounded shadow"
+                  autoplay
+                  loop
+                  controls
+                >
+                <div class="play-button">
+                  <i class="bi bi-play-fill text-white fs-1"></i>
+                  <!-- Usando un SVG simple por si no tienen Bootstrap Icons -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    fill="white"
+                    class="bi bi-play-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <section class="impacto-ambiental py-5">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-6 text-white text-end">
+              <h2 class="display-5 fw-bold mb-4 impact-title text-white" data-i18n="index-impacto-title">
+                Cargas con <br> menor impacto <br />
+                <span class="cursive-text">ambiental</span>
+              </h2>
+              <p class="mb-4 lead" data-i18n="index-impacto-desc">
+                Optimizamos el funcionamiento y las operaciones para un máximo
+                aprovechamiento de los recursos y destinamos un porcentaje de la
+                facturación de la empresa para la forestación de zonas
+                desérticas.
+              </p>
+              <a href="impacto-ambiental.html" class="btn btn-conoce-green" data-i18n="hero-conocer">Conocer más</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="servicios-section py-5 position-relative">
+        <div class="bg-watermark"></div>
+        <div class="container position-relative">
+          <h2 class="section-title mb-5" data-i18n="services-title">Nuestros servicios</h2>
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800">
+              <div class="service-card h-100">
+                <div class="card-img-wrapper">
+                  <img
+                    src="img/index/card-servicios-1.jpg"
+                    alt="Depósito logístico"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 data-i18n="service-1-title">Depósito logístico para empresas y pymes</h5>
+                  <p class="card-description" data-i18n="service-1-desc">
+                    Contamos con un complejo de Exportaciones y Comercio Exterior en Mendoza donde se realizan tareas de warehousing, almacenaje, distribución, consolidación, desconsolidación, entre otros.
+                  </p>
+                  <a href="deposito.html" class="btn btn-card-blue btn-pill" data-i18n="btn-conocer-mas">Conocer más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+              <div class="service-card h-100">
+                <div class="card-img-wrapper">
+                  <img
+                    src="img/index/card-servicios-2.jpg"
+                    alt="Transporte de cargas"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 data-i18n="service-2-title">Transporte de cargas</h5>
+                  <p class="card-description" data-i18n="service-2-desc">
+                    Contamos con unidades de negocios versátiles, y a la vez complementarias entre sí para brindar un servicio integral. Profesionalizando el canal logístico.
+                  </p>
+                  <a href="transporte.html" class="btn btn-card-blue btn-pill" data-i18n="btn-conocer-mas">Conocer más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+              <div class="service-card h-100">
+                <div class="card-img-wrapper">
+                  <img
+                    src="img/index/card-servicios-3.jpg"
+                    alt="Puerto Aduanero terrestre"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 data-i18n="service-3-title">Puerto Aduanero terrestre</h5>
+                  <p class="card-description" data-i18n="service-3-desc">
+                    Contamos con una cámara frigorífica, una plataforma con tanque para guarda de líquidos a granel, una estación para transferencia, verificación, desinfección, limpieza, pesaje y guarda de cereales a granel; y el predio cuenta con una capacidad para 600 camiones.
+                  </p>
+                  <a href="contacto.html" class="btn btn-card-blue btn-pill" data-i18n="btn-contactar">Contactar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="por-que-elegirnos">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <img src="img/index/img-elejirnos.png" alt="Por qué elegirnos" class="img-fluid w-100 h-100 object-fit-cover shadow-lg">
+            </div>
+            <div class="col-lg-6 bg-dibiagi-blue text-white why-us-content">
+              <h2 class="why-us-title" data-i18n="why-title">¿Por qué elegirnos?</h2>
+              <p class="why-us-subtitle" data-i18n="why-subtitle">Porque contamos con parámetros y estándares de calidad que regulan nuestra operatoria. Entre ellos se destacan:</p>
+              
+              <div class="why-us-item">
+                <div class="red-icon-wrapper">
+                  <div class="red-icon-circle">
+                    <i class="fas fa-box"></i>
+                  </div>
+                </div>
+                <div class="why-us-item-text">
+                  <h6 class="why-us-item-title" data-i18n="why-item-1">Aval para transportar y almacenar carga peligrosa (IMO) y las habilitaciones ante el RUCA y el SEDRONAR.</h6>
+                </div>
+              </div>
+
+              <div class="why-us-item">
+                <div class="red-icon-wrapper">
+                  <div class="red-icon-circle">
+                    <i class="fas fa-box"></i>
+                  </div>
+                </div>
+                <div class="why-us-item-text">
+                  <h6 class="why-us-item-title" data-i18n="why-item-2-title">Normas NFPA</h6>
+                  <p class="why-us-item-description" data-i18n="why-item-2-desc">Se integran a nuestro sistema de contingencia de siniestros, para la prevención de incendios, capacitación, instalación y uso de medios de protección.</p>
+                </div>
+              </div>
+
+              <div class="why-us-item">
+                <div class="red-icon-wrapper">
+                  <div class="red-icon-circle">
+                    <i class="fas fa-box"></i>
+                  </div>
+                </div>
+                <div class="why-us-item-text">
+                  <h6 class="why-us-item-title" data-i18n="why-item-3-title">Normas ISO 9001: <br> Depósito Fiscal PTM – Puerto Terrestre Mendoza de MULTIMODAL S.A.C.I.A</h6>
+                  <p class="why-us-item-description" data-i18n="why-item-3-desc">Tenemos un Sistema de Gestión de Calidad que cumple con los requisitos de la norma IRAM – ISO 9001:2015. Cuyo alcance es: Ejecución de operaciones fiscales aduaneras de custodia, movimiento, pesaje y medición de mercaderías sólidas, líquidas o gaseosas y sustancias peligrosas para la importación o exportación. Siguiendo las premisas de calidad de nuestros clientes aspiramos a seguir creciendo en la excelencia de nuestros servicios.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+   <!---   <section class="testimonials-section py-5">
+        <div class="container py-5">
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <h2 class="section-title mb-0">¿Qué dicen nuestros clientes?</h2>
+            <div class="d-flex gap-2">
+              <button class="btn btn-arrow-yellow"><i class="fas fa-arrow-left"></i></button>
+              <button class="btn btn-arrow-blue"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="testimonial-card white-card shadow p-4 border-0">
+                <div class="d-flex justify-content-between align-items-start mb-4">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="img/index/comentarios-1.png" alt="María Elena Rodríguez" class="rounded-circle avatar border border-2 border-white">
+                    <div>
+                      <h6 class="fw-bold mb-0">Fernando Sthephen</h6>
+                    </div>
+                  </div>
+                  <div class="quote-icon text-yellow fs-3"><i class="fas fa-quote-right"></i></div>
+                </div>
+                <p class="small fst-italic mb-4 text-muted">"Llevamos más de 8 años trabajando con Dibiagi para el transporte de nuestros vinos a Chile y Uruguay. Su puntualidad y el cuidado con la mercadería son impecables. El seguimiento en tiempo real nos da tranquilidad y sus tiempos de entrega siempre se cumplen. Son un socio estratégico para nuestra operación de exportación."</p>
+                <div class="stars text-warning">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="testimonial-card blue-card shadow p-4 text-white border-0">
+                <div class="d-flex justify-content-between align-items-start mb-4">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="img/index/comentarios-2.jpg" alt="Carlos Andrés Méndez" class="rounded-circle avatar border border-2 border-white">
+                    <div>
+                      <h6 class="fw-bold mb-0 text-white">Carlos Andrés Méndez</h6>
+                    </div>
+                  </div>
+                  <div class="quote-icon text-white opacity-25 fs-3"><i class="fas fa-quote-right"></i></div>
+                </div>
+                <p class="small fst-italic mb-4 opacity-75">"Necesitábamos un operador logístico que manejara cargas peligrosas con todas las certificaciones. Dibiagi no solo cumple con las normas IMO y SEDRONAR, sino que su equipo nos asesora constantemente. Su depósito en Mendoza nos permite consolidar envíos y reducir costos. Excelente servicio integral."</p>
+                <div class="stars text-warning">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="diferencia-section py-5 text-center text-white">
+        <div class="container py-5">
+          <h2 class="fw-bold mb-5" data-i18n="diff-title">¿Qué nos diferencia?</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="glass-card p-5">
+                <i class="far fa-heart fs-1 mb-3 text-white"></i>
+                <h2 class="display-3 fw-bold mb-0" data-aos="zoom-out-down" data-aos-duration="2000">4000</h2>
+                <p class="small mb-0 text-uppercase tracking-wider" data-aos="zoom-out-down" data-aos-duration="2000" data-i18n="diff-clients">Clientes satisfechos</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="glass-card p-5">
+                <i class="far fa-clock fs-1 mb-3 text-white"></i>
+                <h2 class="display-3 fw-bold mb-0" data-aos="zoom-out-down" data-aos-duration="2000">57</h2>
+                <p class="small mb-0 text-uppercase tracking-wider" data-aos="zoom-out-down" data-aos-duration="2000" data-i18n="diff-years">Años en el mercado</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="glass-card p-5">
+                <i class="fas fa-truck-moving fs-1 mb-3 text-white"></i>
+                <h2 class="display-3 fw-bold mb-0" data-aos="zoom-out-down" data-aos-duration="2000">450</h2>
+                <p class="small mb-0 text-uppercase tracking-wider" data-aos="zoom-out-down" data-aos-duration="2000" data-i18n="diff-units">Unidades funcionando</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="unidades-section py-5 bg-light">
+        <div class="container py-5">
+          <h2 class="text-center section-title mb-5">Otras unidades de negocio</h2>
+          <div class="row g-4">
+
+            <!-- Card 2: Oliver Cooks -->
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="200">
+              <div class="service-card shadow h-100">
+                <div class="card-img-wrapper">
+                  <img src="img/index/web-oliver.jpg" alt="Oliver Cooks" class="img-fluid">
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="fw-bold mb-3 titulo-card">Oliver Cooks</h5>
+                  <p class="texto-card mb-4" data-i18n="unit-oliver-desc">
+                    Aceites de oliva de gran calidad, elaborado con los mayores cuidados desde su plantación, cosecha, traslado y producción.
+                  </p>
+                  <a href="https://aceiteolivercooks.com/" target="_blank" class="btn btn-card-blue" data-i18n="btn-conocer-mas">Conocer más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3: Wolf Hard -->
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="400">
+              <div class="service-card shadow h-100">
+                <div class="card-img-wrapper">
+                  <img src="img/index/web-wolf-hard.jpg" alt="Wolf Hard" class="img-fluid">
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="fw-bold mb-3 titulo-card">Wolf Hard</h5>
+                  <p class="texto-card mb-4" data-i18n="unit-wolf-desc">
+                    Impulsando el futuro del agro con innovación y fuerza.
+                  </p>
+                  <a href="https://wolfhard.com.ar/" target="_blank" class="btn btn-card-blue" data-i18n="btn-conocer-mas">Conocer más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4: WestLine -->
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="600">
+              <div class="service-card shadow h-100">
+                <div class="card-img-wrapper">
+                  <img src="img/index/web-westline.png" alt="WestLine" class="img-fluid">
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="fw-bold mb-3 titulo-card">WestLine</h5>
+                  <p class="texto-card mb-4" data-i18n="unit-westline-desc">
+                    Ofrecemos transporte de cargas livianas.
+                  </p>
+                  <a href="https://www.instagram.com/heliwestline/" target="_blank" class="btn btn-card-blue" data-i18n="btn-conocer-mas">Conocer más</a>
+                </div>
+              </div>
+            </div>
+                        <!-- Card 1: Docwell -->
+            <div class="col-lg-3 col-md-6" data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="100">
+              <div class="service-card shadow h-100">
+                <div class="card-img-wrapper">
+                  <img src="img/index/docwell.png" alt="Docwell" class="img-fluid">
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="fw-bold mb-3 titulo-card">Docwell</h5>
+                  <p class="texto-card mb-4" data-i18n="unit-docwell-desc">
+                    Brindamos soluciones de movilidad a todas las empresas que ven resuelta la logística de sus servicios y empleados a través del alquiler de vehículos.
+                  </p>
+                  <a href="https://docwellrental.com/" target="_blank" class="btn btn-card-blue" data-i18n="btn-conocer-mas">Conocer más</a>
+                </div>             
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands-strip-small">
+        <div class="container text-center">
+          <img
+            src="img/index/logos-dibiagi.jpg"
+            alt="Nuestras Marcas"
+            class="img-fluid"
+          />
+        </div>
+      </section>
+    </main>
+      <section class="map-section">
+        <div class="map-container position-relative">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.743902275142!2d-68.80643922436333!3d-32.931363871116744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0c0f287f3441%3A0xed5f96a3afa2af2f!2sDibiagi%20Transporte%20Internacional%20S.A.!5e0!3m2!1ses-419!2sar!4v1768882814140!5m2!1ses-419!2sar" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <footer id="footer" class="footer-main text-white">
+        <!-- Footer Top -->
+        <div class="footer-top py-5">
+          <div class="container">
+            <div class="row align-items-start">
+              <!-- Col 1: Brand & Description -->
+              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <img src="img/index/logo-footer.png" alt="Dibiagi Footer" class="img-fluid mb-3" style="max-width: 180px;">
+                <p class="small opacity-75 pe-lg-4" data-i18n="footer-description">
+                  Trabajamos para ser la <strong>Empresa Líder</strong> en la prestación de servicios logísticos en Argentina y países limítrofes.
+                </p>
+              </div>
+
+              <!-- Col 2: Pages -->
+              <div class="col-lg-4 col-md-3 col-6">
+                <h5 class="fw-bold mb-4" data-i18n="footer-pages">Páginas</h5>
+                <div class="row">
+                  <div class="col-6">
+                    <ul class="list-unstyled footer-links">
+                      <li><a href="index.html" data-i18n="nav-inicio">Inicio</a></li>
+                      <li><a href="transporte.html" data-i18n="nav-transporte">Transporte de cargas</a></li>
+                      <li><a href="deposito.html" data-i18n="nav-deposito">Depósito logístico</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list-unstyled footer-links">
+                      <li><a href="nosotros.html" data-i18n="nav-nosotros">Nosotros</a></li>
+                      <li><a href="contacto.html" data-i18n="nav-contacto">Contacto</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Col 3: Social Icons -->
+              <div class="col-lg-4 col-md-3 col-6 text-lg-end">
+                <div class="d-flex gap-3 justify-content-lg-end social-icons fs-4">
+                  <a target="_blank" href="https://www.linkedin.com/company/dibiagi-transporte-internacional/" class="text-white opacity-75 hover-opacity-100"><i class="fab fa-linkedin"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/GrupoDibiagi/" class="text-white opacity-75 hover-opacity-100"><i class="fab fa-facebook"></i></a>
+                  <a target="_blank" href="https://www.instagram.com/grupodibiagi/" class="text-white opacity-75 hover-opacity-100"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom: Locations -->
+        <div class="footer-locations py-4">
+          <div class="container">
+            <div class="row g-4">
+              <!-- Mendoza -->
+              <div class="col-lg col-md-6">
+                <h6 class="fw-bold mb-2 text-white">Mendoza</h6>
+                <p class="small opacity-75 mb-1">Complejo de Operaciones Logísticos y Comercio Exterior</p>
+                <a target="_blank" href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A./@-32.9313638,-68.8064392,17z/data=!3m1!4b1!4m5!3m4!1s0x967e0c0f287f3441:0xed5f96a3afa2af2f!8m2!3d-32.9313638!4d-68.8042504"><p class="small opacity-75 mb-1">Rodríguez Peña 169, Luzuriaga, Maipú, Mendoza. Argentina</p></a>
+                <p class="small opacity-75 mb-0"><strong>Tel:</strong> 261 5873045</p>
+              </div>
+
+              <!-- Buenos Aires -->
+              <div class="col-lg col-md-6">
+                <h6 class="fw-bold mb-2 text-white">Buenos Aires</h6>
+                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
+                <a target="_blank" href="https://www.google.com.ar/maps/place/Murchison+Deposito+Fiscal/@-34.5739888,-58.3923537,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb5678f1b6c83:0xc5d4a0ffb5f4c306!8m2!3d-34.5739888!4d-58.3923537!16s%2Fg%2F12hm2mht1?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"><p class="small opacity-75 mb-1">Av. Ramón Castillo 2500 C.A.B.A., Argentina (MULTIMODAL)</p></a>
+                <p class="small opacity-75 mb-0"><strong>Tel:</strong> +549 (011) 3577 0717</p>
+                <p class="small opacity-75 mb-0"><strong>Tel:</strong> +54 (011) 4801 6222</p>
+              </div>
+
+              <!-- Chubut -->
+              <div class="col-lg col-md-6">
+                <h6 class="fw-bold mb-2 text-white">Chubut</h6>
+                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
+                <a target="_blank" href="https://www.google.com/maps/place/Av.+Hip%C3%B3lito+Yrigoyen+4324,+U9003+Comodoro+Rivadavia,+Chubut/@-45.8949422,-67.5420258,17z/data=!3m1!4b1!4m5!3m4!1s0xbde5ab455fafb471:0x26aa64c8419ab54d!8m2!3d-45.8949422!4d-67.5398371?shorturl=1"><p class="small opacity-75 mb-1">Av. Hipólito Yrigoyen 4324, Comodoro Rivadavia, Chubut, Arg.</p></a>
+                <p class="small opacity-75 mb-0"><strong>Tel:</strong> +54 (0297) 44 81 670</p>
+              </div>
+
+              <!-- Chile -->
+              <div class="col-lg col-md-6">
+                <h6 class="fw-bold mb-2 text-white">Chile</h6>
+                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
+                <a target="_blank" href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A.+Sucursal+Los+Andes+-+Chile/@-32.8315975,-70.5916638,17z/data=!3m1!4b1!4m6!3m5!1s0x9688051c8585707f:0xf7721d36314659cf!8m2!3d-32.8315975!4d-70.5916638!16s%2Fg%2F11ghff05rw?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"><p class="small opacity-75 mb-1">Av. Argentina Oriente 50 esq. Independencia, Los Andes, Chile.</p></a>
+                <p class="small opacity-75 mb-0"><strong>Tel:</strong> +56 (342) 423 571 / +56 (342) 422 038 / 464 654</p>
+              </div>
+
+              <!-- Uruguay -->
+              <div class="col-lg col-md-6">
+                <h6 class="fw-bold mb-2 text-white">Uruguay</h6>
+                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
+                <a target="_blank" href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A.+Sucursal+Uruguay/@-34.8784877,-56.1493168,17z/data=!3m1!4b1!4m6!3m5!1s0x959f81b8fc61b32d:0x30a916f4a862af24!8m2!3d-34.8784877!4d-56.1493168!16s%2Fg%2F11hdh2rf6t?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"><p class="small opacity-75 mb-1">Bvar. Batlle y Ordoñez 2925, apto 01. Montevideo, Uruguay</p></a>
+                <p class="small opacity-75 mb-0"><strong>Tel:</strong> +598 2481 3000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

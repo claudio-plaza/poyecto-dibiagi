@@ -1,0 +1,232 @@
+/* 
+   TIMELINE VERTICAL SVG - DISEÑO LIMPIO
+   --------------------------------------
+   Línea SVG animada con scroll
+   Eventos verticales con fechas a la izquierda
+*/
+
+:root {
+    --tl-bg: #ffffff;
+    --tl-line: #e0e0e0;
+    --tl-accent: #13216A;
+    --tl-highlight: #E1211B;
+    --tl-text: #13216A;
+    --tl-text-muted: #666666;
+    --tl-date: #999999;
+}
+
+/* ===========================================
+   SECCIÓN PRINCIPAL
+   =========================================== */
+.timeline-vertical-section {
+    background-color: #fff;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-vertical-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* ===========================================
+   TÍTULO DE SECCIÓN
+   =========================================== */
+.timeline-vertical-section .section-title {
+    text-align: center;
+    color: var(--tl-text);
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+/* ===========================================
+   CONTENEDOR DEL TIMELINE
+   =========================================== */
+.timeline-wrapper {
+    position: relative;
+    padding-left: 140px;
+}
+
+/* ===========================================
+   LÍNEA SVG
+   =========================================== */
+.timeline-line-svg {
+    position: absolute;
+    left: 120px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    z-index: 1;
+}
+
+.timeline-line-bg {
+    stroke: var(--tl-line);
+    stroke-width: 2;
+    fill: none;
+}
+
+.timeline-line-progress {
+    stroke: var(--tl-accent);
+    stroke-width: 2;
+    fill: none;
+    transition: none; /* Sync is better without transition for scroll-based animation */
+}
+
+/* ===========================================
+   EVENTOS
+   =========================================== */
+.timeline-events {
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-event {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-event.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fecha a la izquierda */
+.timeline-date {
+    position: absolute;
+    left: -140px;
+    width: 100px;
+    text-align: right;
+    font-family: 'Inter', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--tl-date);
+    padding-top: 4px;
+    letter-spacing: 1px;
+}
+
+/* Punto en la línea */
+.timeline-dot {
+    position: absolute;
+    left: -22px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: 3px solid var(--tl-line);
+    border-radius: 50%;
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+
+.timeline-event.visible .timeline-dot {
+    border-color: var(--tl-highlight);
+    background-color: var(--tl-highlight);
+    box-shadow: 0 0 0 4px rgba(225, 33, 27, 0.2);
+}
+
+/* Contenido */
+.timeline-content {
+    padding-left: 30px;
+    flex: 1;
+}
+
+.timeline-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--tl-text);
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.timeline-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--tl-text-muted);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Emojis/iconos decorativos */
+.timeline-emoji {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 1rem;
+}
+
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
+@media (max-width: 768px) {
+    .timeline-wrapper {
+        padding-left: 50px;
+    }
+    
+    .timeline-line-svg {
+        left: 30px;
+    }
+    
+    .timeline-date {
+        position: relative;
+        left: 0;
+        width: auto;
+        text-align: left;
+        margin-bottom: 8px;
+        font-size: 0.75rem;
+    }
+    
+    .timeline-event {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    
+    .timeline-dot {
+        left: -32px;
+    }
+    
+    .timeline-content {
+        padding-left: 20px;
+    }
+    
+    .timeline-title {
+        font-size: 1.1rem;
+    }
+    
+    .timeline-subtitle {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===========================================
+   ANIMACIONES ADICIONALES
+   =========================================== */
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 4px rgba(74, 158, 255, 0.2); }
+    50% { box-shadow: 0 0 0 8px rgba(74, 158, 255, 0.1); }
+}
+
+.timeline-event.visible .timeline-dot {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Primer evento siempre visible al cargar */
+.timeline-event:first-child {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-event:first-child .timeline-dot {
+    border-color: var(--tl-highlight);
+    background-color: var(--tl-highlight);
+}
