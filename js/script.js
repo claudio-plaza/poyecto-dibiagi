@@ -3,6 +3,18 @@
 // ============================================
 
 document.addEventListener("DOMContentLoaded", function () {
+  // ============================================
+  // CONTADOR DE AÑOS EN EL MERCADO (Automático)
+  // ============================================
+  // Dibiagi fue fundada en 1961
+  const FOUNDING_YEAR = 1961;
+  const yearsCounter = document.getElementById("years-counter");
+  if (yearsCounter) {
+    const currentYear = new Date().getFullYear();
+    const yearsInBusiness = currentYear - FOUNDING_YEAR;
+    yearsCounter.textContent = yearsInBusiness;
+  }
+
   // Inicializar tooltips de Bootstrap con posición debajo
   const tooltipTriggerList = [].slice.call(
     document.querySelectorAll('[data-bs-toggle="tooltip"]'),

@@ -90,14 +90,12 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Mi CSS -->
@@ -115,6 +113,8 @@
                 src="img/index/logo-hero.png"
                 alt="DIBIAGI"
                 class="img-fluid header-logo"
+                width="120"
+                height="40"
               />
             </a>
             <!-- Contactos -->
@@ -336,6 +336,7 @@
                     src="img/index/card-servicios-1.jpg"
                     alt="Depósito logístico"
                     class="img-fluid"
+                    loading="lazy"
                   />
                 </div>
                 <div class="card-body">
@@ -499,7 +500,7 @@
             <div class="col-md-4">
               <div class="glass-card p-5">
                 <i class="far fa-clock fs-1 mb-3 text-white"></i>
-                <h2 class="display-3 fw-bold mb-0" data-aos="zoom-out-down" data-aos-duration="2000">57</h2>
+                <h2 id="years-counter" class="display-3 fw-bold mb-0" data-aos="zoom-out-down" data-aos-duration="2000">65</h2>
                 <p class="small mb-0 text-uppercase tracking-wider" data-aos="zoom-out-down" data-aos-duration="2000" data-i18n="diff-years">Años en el mercado</p>
               </div>
             </div>
@@ -515,7 +516,7 @@
       </section>
       <section class="unidades-section py-5 bg-light">
         <div class="container py-5">
-          <h2 class="text-center section-title mb-5">Otras unidades de negocio</h2>
+          <h2 class="text-center section-title mb-5" data-i18n="units-title">Otras unidades de negocio</h2>
           <div class="row g-4">
 
             <!-- Card 2: Oliver Cooks -->
@@ -651,56 +652,57 @@
             <div class="row g-4">
               <!-- Mendoza -->
               <div class="col-lg col-md-6">
-                <h6 class="fw-bold mb-2 text-white">Mendoza</h6>
-                <p class="small opacity-75 mb-1">Complejo de Operaciones Logísticos y Comercio Exterior</p>
-                <a target="_blank" href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A./@-32.9313638,-68.8064392,17z/data=!3m1!4b1!4m5!3m4!1s0x967e0c0f287f3441:0xed5f96a3afa2af2f!8m2!3d-32.9313638!4d-68.8042504"><p class="small opacity-75 mb-1">Rodríguez Peña 169, Luzuriaga, Maipú, Mendoza. Argentina</p></a>
+                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-mendoza">Mendoza</h6>
+                <p class="small opacity-75 mb-1" data-i18n="footer-mendoza-desc">Complejo de Operaciones Logísticos y Comercio Exterior</p>
+                <a target="_blank" href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A./@-32.9313638,-68.8064392,17z/data=!3m1!4b1!4m5!3m4!1s0x967e0c0f287f3441:0xed5f96a3afa2af2f!8m2!3d-32.9313638!4d-68.8042504"><p class="small opacity-75 mb-1" data-i18n="footer-mendoza-addr">Rodríguez Peña 169, Luzuriaga, Maipú, Mendoza. Argentina</p></a>
                 <p class="small opacity-75 mb-0"><strong>Tel:</strong> 261 5873045</p>
               </div>
 
               <!-- Buenos Aires -->
               <div class="col-lg col-md-6">
-                <h6 class="fw-bold mb-2 text-white">Buenos Aires</h6>
-                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
-                <a target="_blank" href="https://www.google.com.ar/maps/place/Murchison+Deposito+Fiscal/@-34.5739888,-58.3923537,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb5678f1b6c83:0xc5d4a0ffb5f4c306!8m2!3d-34.5739888!4d-58.3923537!16s%2Fg%2F12hm2mht1?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"><p class="small opacity-75 mb-1">Av. Ramón Castillo 2500 C.A.B.A., Argentina (MULTIMODAL)</p></a>
+                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-buenos-aires">Buenos Aires</h6>
+                <p class="small opacity-75 mb-1" data-i18n="footer-terminal-carga">Terminal de Carga:</p>
+                <a target="_blank" href="https://www.google.com.ar/maps/place/Murchison+Deposito+Fiscal/@-34.5739888,-58.3923537,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb5678f1b6c83:0xc5d4a0ffb5f4c306!8m2!3d-34.5739888!4d-58.3923537!16s%2Fg%2F12hm2mht1?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"><p class="small opacity-75 mb-1" data-i18n="footer-ba-addr">Av. Ramón Castillo 2500 C.A.B.A., Argentina (MULTIMODAL)</p></a>
                 <p class="small opacity-75 mb-0"><strong>Tel:</strong> +549 (011) 3577 0717</p>
                 <p class="small opacity-75 mb-0"><strong>Tel:</strong> +54 (011) 4801 6222</p>
               </div>
 
               <!-- Chubut -->
               <div class="col-lg col-md-6">
-                <h6 class="fw-bold mb-2 text-white">Chubut</h6>
-                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
-                <a target="_blank" href="https://www.google.com/maps/place/Av.+Hip%C3%B3lito+Yrigoyen+4324,+U9003+Comodoro+Rivadavia,+Chubut/@-45.8949422,-67.5420258,17z/data=!3m1!4b1!4m5!3m4!1s0xbde5ab455fafb471:0x26aa64c8419ab54d!8m2!3d-45.8949422!4d-67.5398371?shorturl=1"><p class="small opacity-75 mb-1">Av. Hipólito Yrigoyen 4324, Comodoro Rivadavia, Chubut, Arg.</p></a>
+                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-chubut">Chubut</h6>
+                <p class="small opacity-75 mb-1" data-i18n="footer-terminal-carga">Terminal de Carga:</p>
+                <a target="_blank" href="https://www.google.com/maps/place/Av.+Hip%C3%B3lito+Yrigoyen+4324,+U9003+Comodoro+Rivadavia,+Chubut/@-45.8949422,-67.5420258,17z/data=!3m1!4b1!4m5!3m4!1s0xbde5ab455fafb471:0x26aa64c8419ab54d!8m2!3d-45.8949422!4d-67.5398371?shorturl=1"><p class="small opacity-75 mb-1" data-i18n="footer-chubut-addr">Av. Hipólito Yrigoyen 4324, Comodoro Rivadavia, Chubut, Arg.</p></a>
                 <p class="small opacity-75 mb-0"><strong>Tel:</strong> +54 (0297) 44 81 670</p>
               </div>
 
               <!-- Chile -->
               <div class="col-lg col-md-6">
-                <h6 class="fw-bold mb-2 text-white">Chile</h6>
-                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
-                <a target="_blank" href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A.+Sucursal+Los+Andes+-+Chile/@-32.8315975,-70.5916638,17z/data=!3m1!4b1!4m6!3m5!1s0x9688051c8585707f:0xf7721d36314659cf!8m2!3d-32.8315975!4d-70.5916638!16s%2Fg%2F11ghff05rw?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"><p class="small opacity-75 mb-1">Av. Argentina Oriente 50 esq. Independencia, Los Andes, Chile.</p></a>
+                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-chile-sucursal">Chile</h6>
+                <p class="small opacity-75 mb-1" data-i18n="footer-terminal-carga">Terminal de Carga:</p>
+                <a target="_blank" href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A.+Sucursal+Los+Andes+-+Chile/@-32.8315975,-70.5916638,17z/data=!3m1!4b1!4m6!3m5!1s0x9688051c8585707f:0xf7721d36314659cf!8m2!3d-32.8315975!4d-70.5916638!16s%2Fg%2F11ghff05rw?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"><p class="small opacity-75 mb-1" data-i18n="footer-chile-addr">Av. Argentina Oriente 50 esq. Independencia, Los Andes, Chile.</p></a>
                 <p class="small opacity-75 mb-0"><strong>Tel:</strong> +56 (342) 423 571 / +56 (342) 422 038 / 464 654</p>
               </div>
 
               <!-- Uruguay -->
               <div class="col-lg col-md-6">
-                <h6 class="fw-bold mb-2 text-white">Uruguay</h6>
-                <p class="small opacity-75 mb-1">Terminal de Carga:</p>
-                <a target="_blank" href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A.+Sucursal+Uruguay/@-34.8784877,-56.1493168,17z/data=!3m1!4b1!4m6!3m5!1s0x959f81b8fc61b32d:0x30a916f4a862af24!8m2!3d-34.8784877!4d-56.1493168!16s%2Fg%2F11hdh2rf6t?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"><p class="small opacity-75 mb-1">Bvar. Batlle y Ordoñez 2925, apto 01. Montevideo, Uruguay</p></a>
+                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-uruguay-sucursal">Uruguay</h6>
+                <p class="small opacity-75 mb-1" data-i18n="footer-terminal-carga">Terminal de Carga:</p>
+                <a target="_blank" href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A.+Sucursal+Uruguay/@-34.8784877,-56.1493168,17z/data=!3m1!4b1!4m6!3m5!1s0x959f81b8fc61b32d:0x30a916f4a862af24!8m2!3d-34.8784877!4d-56.1493168!16s%2Fg%2F11hdh2rf6t?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"><p class="small opacity-75 mb-1" data-i18n="footer-uruguay-addr">Bvar. Batlle y Ordoñez 2925, apto 01. Montevideo, Uruguay</p></a>
                 <p class="small opacity-75 mb-0"><strong>Tel:</strong> +598 2481 3000</p>
               </div>
             </div>
           </div>
         </div>
       </footer>
-    <script src="js/translations.js"></script>
-    <script src="js/i18n.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/translations.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/script.js" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
+      defer
     ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
   </body>
 </html>

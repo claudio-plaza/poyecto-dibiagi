@@ -29,6 +29,15 @@ const translations = {
     "trans-desc-livianas": "Transporte aéreo de cargas livianas en helicóptero, ideal para accesos complejos y operaciones que requieren rapidez y precisión. Brindamos soluciones seguras y eficientes para el traslado de materiales a zonas remotas.",
     "trans-destinos-title": "Destinos",
     "trans-destinos-p1": "Diariamente con una frecuencia destacada de viajes logramos unir distintos puntos geográficos de Argentina, Chile, Paraguay, Uruguay y Brasil. 16 salidas diarias a Chile y las distintas opciones en unidades de transporte nos posicionan como líderes en este tráfico.",
+    "trans-destinos-p2": "A través del transporte y almacenaje de cargas en nuestras distintas terminales brindamos soluciones integrales para la satisfacción de las necesidades logísticas del cliente.",
+    "trans-destinos-p3": "Como soporte adicional diseñamos planes optimizando la cadena de valor, teniendo en cuenta parámetros de logística verde para un mayor aprovechamiento de los recorridos, permitiendo además una reducción del impacto ambiental.",
+    "trans-destinos-subtitle": "Nuestras frecuencias semanales unen:",
+    "trans-destinos-route-bsas-chile": "Buenos Aires – Chile",
+    "trans-destinos-route-chile-bsas": "Chile – Buenos Aires",
+    "trans-destinos-route-mza-chile": "Mendoza – Chile",
+    "trans-destinos-route-chile-mza": "Chile – Mendoza",
+    "trans-destinos-route-bsas-mvd": "Buenos Aires – Montevideo",
+    "trans-destinos-route-bsas-asu": "Buenos Aires – Asunción",
     "trans-terminales-title": "Terminales de carga",
     "trans-flota-title": "Nuestra flota de vehículos",
     // Deposito Page
@@ -115,6 +124,9 @@ const translations = {
     "nos-mision": "Misión",
     "nos-vision": "Visión",
     "nos-valores": "Valores",
+    "nos-mision-img": "img/nosotros/mision.png",
+    "nos-vision-img": "img/nosotros/vision.png",
+    "nos-valores-img": "img/nosotros/valores.png",
     // Contact Page
     "con-badge": "Brindamos soluciones logísticas",
     "con-title": "Contactános",
@@ -135,6 +147,23 @@ const translations = {
     "fleet-furgon-1": "FURGON TÉRMICO (SERIE I) 101,5M3",
     "fleet-sider-1": "SEMIRREMOLQUE SIDER (SERIE I) 101,5M3",
     "fleet-furgon-2": "FURGON TÉRMICO (SERIE I) 80M3",
+    "fleet-furgon-2-t": "FURGON TÉRMICO (SERIE II)",
+    "fleet-furgon-2-d": "FURGON TÉRMICO (SERIE II) 99,5M3",
+    "fleet-aluminio-t": "FURGON DE ALUMINIO",
+    "fleet-aluminio-d": "FURGON DE ALUMINIO 107,6M3",
+    "fleet-sider-2-t": "SIDER 96.5M3",
+    "fleet-sider-2-d": "SIDER 96.5M3",
+    "fleet-camion-semi-t": "CAMIÓN CON SEMI",
+    "fleet-camion-semi-d": "CAMIÓN CON SEMI",
+    "fleet-cama-baja-t": "SEMI CAMA BAJA",
+    "fleet-cama-baja-d": "SEMI CAMA BAJA",
+    "fleet-furgon-111-t": "CAMIÓN FURGÓN 111",
+    "fleet-furgon-111-d": "CAMIÓN FURGÓN 111",
+    "fleet-sobredimensionada-t": "CARGA SOBREDIMENSIONADA",
+    "fleet-sobredimensionada-d": "VOLVO CARGA SOBREDIMENSIONADA",
+    "fleet-sider-2021-t": "SIDER 2021",
+    "fleet-sider-2021-d": "SIDER 2021",
+    "trans-btn-ver-info": "Ver Información",
 
     // Header Top
     "header-llamanos": "Llamanos en Argentina al",
@@ -151,9 +180,11 @@ const translations = {
     "index-nosotros-p1": "Somos una empresa de logística cuya operatoria integral se encuentra avalada por una trayectoria de más de 60 años al servicio de nuestros clientes.",
     "index-nosotros-p2": "Dibiagi Transporte Internacional junto a Multimodal SACIA, PTM (Puerto Terrestre Mendoza), Flota del Pacífico, Meltesur, MIL y Docwell Rental conforman un sólido grupo que desarrolla tareas de logística internacional y nacional como así también distribuciones dentro de los territorios de Argentina, Chile, Uruguay, Paraguay y Brasil.",
     
-    // Impacto Ambiental (Index)
-    "index-impacto-title": "Cargas con menor impacto ambiental",
+    // Impacto Ambiental (Index & Global)
+    "index-impacto-title": "Cargas con <br> menor impacto <br /> <span class=\"cursive-text\">ambiental</span>",
     "index-impacto-desc": "Optimizamos el funcionamiento y las operaciones para un máximo aprovechamiento de los recursos y destinamos un porcentaje de la facturación de la empresa para la forestación de zonas desérticas.",
+    "impacto-hero-desc": "3% de la tarifa de nuestro servicio es <br /> destinada en acciones sustentables.",
+    "impacto-hero-hashtag": "#Acompañanos",
 
     // Services Section (Index)
     "services-title": "Nuestros servicios",
@@ -196,7 +227,14 @@ const translations = {
     "footer-terminal": "Terminal de Carga:",
     "footer-chubut": "Chubut",
     "footer-chile-sucursal": "Sucursal Los Andes",
-    "footer-uruguay-sucursal": "Sucursal Uruguay"
+    "footer-uruguay-sucursal": "Sucursal Uruguay",
+    "footer-mendoza-desc": "Complejo de Operaciones Logísticos y Comercio Exterior",
+    "footer-mendoza-addr": "Rodríguez Peña 169, Luzuriaga, Maipú, Mendoza. Argentina",
+    "footer-terminal-carga": "Terminal de Carga:",
+    "footer-ba-addr": "Av. Ramón Castillo 2500 C.A.B.A., Argentina (MULTIMODAL)",
+    "footer-chubut-addr": "Av. Hipólito Yrigoyen 4324, Comodoro Rivadavia, Chubut, Arg.",
+    "footer-chile-addr": "Av. Argentina Oriente 50 esq. Independencia, Los Andes, Chile.",
+    "footer-uruguay-addr": "Bvar. Batlle y Ordoñez 2925, apto 01. Montevideo, Uruguay"
   },
   en: {
     // Navbar
@@ -228,6 +266,15 @@ const translations = {
     "trans-desc-livianas": "Air transport of light cargo by helicopter, ideal for complex access and operations that require speed and precision. We provide safe and efficient solutions for moving materials to remote areas.",
     "trans-destinos-title": "Destinations",
     "trans-destinos-p1": "Daily with a high frequency of trips we manage to link different geographical points of Argentina, Chile, Paraguay, Uruguay and Brazil. 16 daily departures to Chile and the various transport unit options position us as leaders in this traffic.",
+    "trans-destinos-p2": "Through the transport and storage of cargo in our different terminals, we provide comprehensive solutions for the satisfaction of the client's logistical needs.",
+    "trans-destinos-p3": "As additional support, we design plans optimizing the value chain, taking into account green logistics parameters for better use of the routes, also allowing a reduction in environmental impact.",
+    "trans-destinos-subtitle": "Our weekly frequencies connect:",
+    "trans-destinos-route-bsas-chile": "Buenos Aires – Chile",
+    "trans-destinos-route-chile-bsas": "Chile – Buenos Aires",
+    "trans-destinos-route-mza-chile": "Mendoza – Chile",
+    "trans-destinos-route-chile-mza": "Chile – Mendoza",
+    "trans-destinos-route-bsas-mvd": "Buenos Aires – Montevideo",
+    "trans-destinos-route-bsas-asu": "Buenos Aires – Asunción",
     "trans-terminales-title": "Freight terminals",
     "trans-flota-title": "Our vehicle fleet",
     // Deposito Page
@@ -314,6 +361,9 @@ const translations = {
     "nos-mision": "Mission",
     "nos-vision": "Vision",
     "nos-valores": "Values",
+    "nos-mision-img": "img/nosotros/mision-en.png",
+    "nos-vision-img": "img/nosotros/vision-en.png",
+    "nos-valores-img": "img/nosotros/valore-en.png",
     // Contact Page
     "con-badge": "Providing logistics solutions",
     "con-title": "Contact Us",
@@ -334,6 +384,23 @@ const translations = {
     "fleet-furgon-1": "THERMAL VAN (SERIE I) 101.5M3",
     "fleet-sider-1": "SIDER SEMI-TRAILER (SERIE I) 101.5M3",
     "fleet-furgon-2": "THERMAL VAN (SERIE I) 80M3",
+    "fleet-furgon-2-t": "THERMAL VAN (SERIE II)",
+    "fleet-furgon-2-d": "THERMAL VAN (SERIE II) 99.5M3",
+    "fleet-aluminio-t": "ALUMINUM VAN",
+    "fleet-aluminio-d": "ALUMINUM VAN 107.6M3",
+    "fleet-sider-2-t": "SIDER 96.5M3",
+    "fleet-sider-2-d": "SIDER 96.5M3",
+    "fleet-camion-semi-t": "TRUCK WITH SEMI-TRAILER",
+    "fleet-camion-semi-d": "TRUCK WITH SEMI-TRAILER",
+    "fleet-cama-baja-t": "LOWBED SEMI-TRAILER",
+    "fleet-cama-baja-d": "LOWBED SEMI-TRAILER",
+    "fleet-furgon-111-t": "BOX TRUCK 111",
+    "fleet-furgon-111-d": "BOX TRUCK 111",
+    "fleet-sobredimensionada-t": "OVERSIZED CARGO",
+    "fleet-sobredimensionada-d": "VOLVO OVERSIZED CARGO",
+    "fleet-sider-2021-t": "SIDER 2021",
+    "fleet-sider-2021-d": "SIDER 2021",
+    "trans-btn-ver-info": "View Information",
 
     // Header Top
     "header-llamanos": "Call us in Argentina at",
@@ -347,21 +414,23 @@ const translations = {
 
     // Nosotros Section (Index)
     "index-nosotros-title": "About Us",
-    "index-nosotros-p1": "We are a logistics company whose comprehensive operations are backed by a track record of more than 60 years at the service of our clients.",
-    "index-nosotros-p2": "Dibiagi Transporte Internacional along with Multimodal SACIA, PTM (Puerto Terrestre Mendoza), Flota del Pacífico, Meltesur, MIL, and Docwell Rental form a solid group that develops international and national logistics tasks as well as distributions within the territories of Argentina, Chile, Uruguay, Paraguay, and Brazil.",
+    "index-nosotros-p1": "We are a logistics firm providing comprehensive operations backed by over 60 years of dedicated service to our clients.",
+    "index-nosotros-p2": "Dibiagi Transporte Internacional, alongside Multimodal SACIA, PTM (Puerto Terrestre Mendoza), Flota del Pacífico, Meltesur, MIL, and Docwell Rental, constitute a robust corporate group. Together, we manage international and domestic logistics, as well as distribution across Argentina, Chile, Uruguay, Paraguay, and Brazil.",
 
-    // Impacto Ambiental (Index)
-    "index-impacto-title": "Cargo with less environmental impact",
-    "index-impacto-desc": "We optimize functioning and operations for maximum utilization of resources and allocate a percentage of the company's billing for the afforestation of desert areas.",
+    // Impacto Ambiental (Index & Global)
+    "index-impacto-title": "Cargo with <br> less environmental <br /> <span class=\"cursive-text\">impact</span>",
+    "index-impacto-desc": "We optimize functioning and operations for maximum resource efficiency, and we allocate a percentage of the company's profit to the reforestation of desert areas.",
+    "impacto-hero-desc": "3% of our service rate is <br /> allocated to sustainable actions.",
+    "impacto-hero-hashtag": "#JoinUs",
 
     // Services Section (Index)
     "services-title": "Our services",
     "service-1-title": "Logistics warehouse for companies and SMEs",
-    "service-1-desc": "We have an Exports and Foreign Trade complex in Mendoza where warehousing, storage, distribution, consolidation, deconsolidation tasks, among others, are carried out.",
+    "service-1-desc": "Our Exports and Foreign Trade complex in Mendoza offers a range of services, including warehousing, storage, distribution, consolidation, and deconsolidation.",
     "service-2-title": "Freight Transport",
-    "service-2-desc": "We have versatile business units, and at the same time complementary to each other to provide an integral service. Professionalizing the logistics channel.",
+    "service-2-desc": "We offer versatile and complementary business units designed to provide integrated solutions and professionalize your logistics operations.",
     "service-3-title": "Land Customs Port",
-    "service-3-desc": "We have a cold room, a platform with a tank for storing bulk liquids, a station for transfer, verification, disinfection, cleaning, weighing and storing bulk cereals; and the site has a capacity for 600 trucks.",
+    "service-3-desc": "Our Land Customs Port features cold storage facilities, a specialized platform for bulk liquid storage, and a dedicated station for the transfer, verification, disinfection, and weighing of cereals. The site offers a total capacity for up to 600 trucks.",
     "btn-conocer-mas": "Learn more",
     "btn-contactar": "Contact",
 
@@ -375,17 +444,17 @@ const translations = {
     "why-item-3-desc": "We have a Quality Management System that complies with the requirements of the IRAM – ISO 9001:2015 standard. Whose scope is: Execution of customs fiscal operations of custody, movement, weighing and measurement of solid, liquid or gaseous goods and dangerous substances for import or export.",
 
     // ¿Qué nos diferencia?
-    "diff-title": "What sets us apart?",
-    "diff-clients": "Satisfied clients",
-    "diff-years": "Years in the market",
-    "diff-units": "Units in operation",
+    "diff-title": "Decades of Trust, Driven by Excellence",
+    "diff-clients": "Satisfied Clients",
+    "diff-years": "Years in the Market",
+    "diff-units": "Units in Operation",
 
     // Otras unidades de negocio
-    "units-title": "Other business units",
-    "unit-oliver-desc": "High-quality olive oils, produced with the greatest care from plantation, harvesting, transport and production.",
-    "unit-wolf-desc": "Driving the future of agro with innovation and strength.",
-    "unit-westline-desc": "We offer light cargo transport.",
-    "unit-docwell-desc": "We provide mobility solutions to all companies that see the logistics of their services and employees resolved through vehicle rental.",
+    "units-title": "Diverse Solutions, One Group",
+    "unit-oliver-desc": "Premium olive oils, crafted with meticulous care across the entire lifecycle—from planting and harvesting to specialized transport and final production.",
+    "unit-wolf-desc": "Driving the future of agribusiness through innovation and industrial strength.",
+    "unit-westline-desc": "Specialized light cargo transport solutions.",
+    "unit-docwell-desc": "Comprehensive mobility solutions for companies seeking to streamline their logistics and personnel transport through flexible vehicle rentals.",
 
     // Footer
     "footer-description": "We work to be the Leading Company in providing logistics services in Argentina and bordering countries.",
@@ -395,6 +464,13 @@ const translations = {
     "footer-terminal": "Freight Terminal:",
     "footer-chubut": "Chubut",
     "footer-chile-sucursal": "Los Andes Branch",
-    "footer-uruguay-sucursal": "Uruguay Branch"
+    "footer-uruguay-sucursal": "Uruguay Branch",
+    "footer-mendoza-desc": "Logistics Operations and Foreign Trade Complex",
+    "footer-mendoza-addr": "169 Rodríguez Peña, Luzuriaga, Maipú, Mendoza. Argentina",
+    "footer-terminal-carga": "Freight Terminal:",
+    "footer-ba-addr": "2500 Av. Ramón Castillo C.A.B.A., Argentina (MULTIMODAL)",
+    "footer-chubut-addr": "4324 Av. Hipólito Yrigoyen, Comodoro Rivadavia, Chubut, Arg.",
+    "footer-chile-addr": "50 Av. Argentina Oriente at Independencia, Los Andes, Chile.",
+    "footer-uruguay-addr": "2925 Bvar. Batlle y Ordoñez, apt 01. Montevideo, Uruguay"
   }
 };

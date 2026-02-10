@@ -2,21 +2,28 @@ function updateContent() {
   const lang = localStorage.getItem('language') || 'es';
   
   // Actualizar todos los elementos con data-i18n
-  document.querySelectorAll('[data-i18n]').forEach(element => {
+  document.querySelectorAll('[data-i18n], [data-i18n-src]').forEach(element => {
+    // 1. Manejar el contenido o placeholder (data-i18n)
     const key = element.getAttribute('data-i18n');
-    if (translations[lang][key]) {
-      // Si el elemento es un input o textarea, actualizamos el placeholder
+    if (key && translations[lang][key]) {
       if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
         element.placeholder = translations[lang][key];
       } else if (element.tagName === 'IMG') {
         element.alt = translations[lang][key];
       } else {
-        element.textContent = translations[lang][key];
+        element.innerHTML = translations[lang][key];
       }
 
-      // También actualizamos el atributo title si existe la traducción
       if (element.hasAttribute('title')) {
         element.title = translations[lang][key];
+      }
+    }
+
+    // 2. Manejar la fuente de imagen (data-i18n-src)
+    const srcKey = element.getAttribute('data-i18n-src');
+    if (srcKey && translations[lang][srcKey]) {
+      if (element.tagName === 'IMG') {
+        element.src = translations[lang][srcKey];
       }
     }
   });
