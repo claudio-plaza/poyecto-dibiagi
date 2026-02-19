@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.dibiagi.com.ar/index.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <loc>https://dibiagi.com/</loc>
+    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.dibiagi.com.ar/transporte.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <loc>https://dibiagi.com/transporte.html</loc>
+    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.dibiagi.com.ar/deposito.html</loc>
-    <lastmod>2026-02-03</lastmod>
+    <loc>https://dibiagi.com/deposito.html</loc>
+    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.dibiagi.com.ar/nosotros.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <priority>0.70</priority>
+    <loc>https://dibiagi.com/nosotros.html</loc>
+    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.dibiagi.com.ar/contacto.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <priority>0.70</priority>
+    <loc>https://dibiagi.com/contacto.html</loc>
+    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.dibiagi.com.ar/impacto-ambiental.html</loc>
-    <lastmod>2026-02-03</lastmod>
-    <priority>0.60</priority>
+    <loc>https://dibiagi.com/impacto-ambiental.html</loc>
+    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
 </urlset>

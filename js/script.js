@@ -251,13 +251,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const fichaImage = document.getElementById("fichaImage");
 
   if (infoButtons.length > 0 && fichaModalEl && fichaImage) {
-    const fichaModal = new bootstrap.Modal(fichaModalEl);
-
     infoButtons.forEach((button) => {
       button.addEventListener("click", function (e) {
         e.preventDefault();
-        const fichaPath = this.getAttribute("data-ficha");
-        if (fichaPath) {
+        
+        // Detectar idioma actual
+        const lang = localStorage.getItem("language") || "es";
+        
+        // Obtener la ruta correspondiente al idioma
+        const fichaPath = this.getAttribute(`data-ficha-${lang}`);
+        
+        if (fichaPath && fichaPath !== "#") {
+          // Inicializar modal solo si es necesario
+          const fichaModal = new bootstrap.Modal(fichaModalEl);
+          // Mostrar siempre en el modal (tanto JPG como PNG)
           fichaImage.src = fichaPath;
           fichaModal.show();
         }
@@ -534,5 +541,30 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     timelineItems.forEach((item) => timelineObserver.observe(item));
+  }
+
+  // ============================================
+  // LAZY LOAD VIDEO (IntersectionObserver)
+  // ============================================
+  const lazyVideos = document.querySelectorAll("video[data-src]");
+
+  if (lazyVideos.length > 0) {
+    const videoObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const video = entry.target;
+            video.src = video.getAttribute("data-src");
+            video.removeAttribute("data-src");
+            videoObserver.unobserve(video);
+          }
+        });
+      },
+      {
+        rootMargin: "200px 0px", // Cargar 200px antes de que sea visible
+      },
+    );
+
+    lazyVideos.forEach((video) => videoObserver.observe(video));
   }
 });

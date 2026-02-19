@@ -10,8 +10,8 @@ body {
 }
 
 .cursive-text {
-  font-family: "Dancing Script", cursive;
-  font-weight: 500;
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
   text-transform: none;
 }
 
@@ -109,7 +109,6 @@ body {
 
 .custom-toggler .navbar-toggler-icon {
   color: #ffffff;
-  
 }
 
 .hero {
@@ -361,8 +360,6 @@ body {
   background-color: #f8f9fa; /* Fondo gris claro muy sutil */
 }
 
-
-
 .service-card {
   background: white;
   border-radius: 25px;
@@ -418,7 +415,7 @@ body {
 }
 
 .bg-dibiagi-blue {
-  background-color: #162C80 !important;
+  background-color: #162c80 !important;
 }
 
 .btn-pill {
@@ -504,7 +501,9 @@ body {
   color: white;
   box-shadow: 0 4px 15px rgba(225, 33, 27, 0.4);
   font-size: 1.4rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -668,7 +667,7 @@ body {
 }
 
 .footer-main a:hover {
-  color: #BABABA !important;
+  color: #bababa !important;
 }
 
 .footer-top {
@@ -706,7 +705,7 @@ body {
 }
 
 .footer-links a:hover {
-  color: #BABABA !important;
+  color: #bababa !important;
   padding-left: 5px;
 }
 
@@ -849,7 +848,7 @@ body {
 }
 
 .impact-title-transport .cursive-text {
-  font-family: "Dancing Script", cursive;
+  font-family: "Imperial Script", cursive;
   font-size: 72px;
   display: block;
 }
@@ -857,7 +856,7 @@ body {
 /* Page Impacto Ambiental Updates */
 .bg-impacto-que-implica {
   background-image: url("../img/impacto ambiental/que implica.png");
-  background-size:cover;
+  background-size: cover;
   background-position: center right;
   min-height: 550px;
   display: flex;
@@ -902,8 +901,9 @@ body {
 
 /* Page Contacto Updates */
 .hero-contacto {
-  background-image: linear-gradient(rgba(11, 34, 77, 0.153), rgba(11, 34, 77, 0.153)),
-                    url("../img/contacto/hero-contacto.png");
+  background-image:
+    linear-gradient(rgba(11, 34, 77, 0.153), rgba(11, 34, 77, 0.153)),
+    url("../img/contacto/hero-contacto.png");
   background-size: cover;
   background-position: center;
   padding: 100px 0;
@@ -921,7 +921,8 @@ body {
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.contact-card-glass:hover, .recruitment-form-container:hover {
+.contact-card-glass:hover,
+.recruitment-form-container:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
@@ -964,7 +965,6 @@ body {
   transform: scale(1.05);
 }
 
-
 .form-contact-custom .form-control {
   border: 1px solid #ddd;
   padding: 12px 15px;
@@ -974,7 +974,7 @@ body {
 }
 
 .form-contact-custom .btn-submit-blue {
-  background-color: #162C80;
+  background-color: #162c80;
   color: white;
   padding: 12px;
   width: 100%;
@@ -999,7 +999,7 @@ body {
 
 .form-contact-custom .dashed:hover {
   background-color: #e9ecef;
-  border-color: #162C80;
+  border-color: #162c80;
 }
 
 /* Fleet Section */
@@ -1332,7 +1332,6 @@ body {
   background: #fff;
   position: relative;
 }
-
 
 /* Modales Depósito Logístico */
 .deposito-custom-modal {
@@ -1698,7 +1697,7 @@ body {
 }
 
 .cta-blue-card {
-  background-color: #162C80;
+  background-color: #162c80;
   border-radius: 20px;
   color: white;
   padding: 60px;
@@ -1721,7 +1720,7 @@ body {
 
 .cta-blue-card .btn-white {
   background-color: white;
-  color: #162C80;
+  color: #162c80;
   border-radius: 8px;
   padding: 12px 30px;
   font-weight: 700;
@@ -1927,24 +1926,60 @@ body {
 }
 
 /* Delays de animación secuencial por grupo */
-.tl-item-1 { transition-delay: 0s; }
-.tl-item-2 { transition-delay: 0.15s; }
-.tl-item-3 { transition-delay: 0.3s; }
-.tl-item-4 { transition-delay: 0.1s; }
-.tl-item-5 { transition-delay: 0.25s; }
-.tl-item-6 { transition-delay: 0.1s; }
-.tl-item-7 { transition-delay: 0.25s; }
-.tl-item-8 { transition-delay: 0.1s; }
-.tl-item-9 { transition-delay: 0.25s; }
-.tl-item-10 { transition-delay: 0.1s; }
-.tl-item-11 { transition-delay: 0.25s; }
-.tl-item-12 { transition-delay: 0.1s; }
-.tl-item-13 { transition-delay: 0.25s; }
-.tl-item-14 { transition-delay: 0.1s; }
-.tl-item-15 { transition-delay: 0.2s; }
-.tl-item-16 { transition-delay: 0.3s; }
-.tl-item-17 { transition-delay: 0.1s; }
-.tl-item-18 { transition-delay: 0.2s; }
+.tl-item-1 {
+  transition-delay: 0s;
+}
+.tl-item-2 {
+  transition-delay: 0.15s;
+}
+.tl-item-3 {
+  transition-delay: 0.3s;
+}
+.tl-item-4 {
+  transition-delay: 0.1s;
+}
+.tl-item-5 {
+  transition-delay: 0.25s;
+}
+.tl-item-6 {
+  transition-delay: 0.1s;
+}
+.tl-item-7 {
+  transition-delay: 0.25s;
+}
+.tl-item-8 {
+  transition-delay: 0.1s;
+}
+.tl-item-9 {
+  transition-delay: 0.25s;
+}
+.tl-item-10 {
+  transition-delay: 0.1s;
+}
+.tl-item-11 {
+  transition-delay: 0.25s;
+}
+.tl-item-12 {
+  transition-delay: 0.1s;
+}
+.tl-item-13 {
+  transition-delay: 0.25s;
+}
+.tl-item-14 {
+  transition-delay: 0.1s;
+}
+.tl-item-15 {
+  transition-delay: 0.2s;
+}
+.tl-item-16 {
+  transition-delay: 0.3s;
+}
+.tl-item-17 {
+  transition-delay: 0.1s;
+}
+.tl-item-18 {
+  transition-delay: 0.2s;
+}
 
 /* Responsive */
 @media (max-width: 991.98px) {
@@ -1997,4 +2032,3 @@ body {
     max-width: 28px;
   }
 }
-
