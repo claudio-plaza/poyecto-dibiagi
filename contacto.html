@@ -8,13 +8,49 @@
     <!-- Meta SEO -->
     <meta
       name="description"
-      content="Contáctanos para soluciones logísticas integrales y transporte internacional. Dibiagi Transporte está a su disposición en Argentina, Chile, Uruguay y Paraguay."
+      content="Contacte con expertos en logística estratégica. Solicite su cotización para transporte internacional, distribución y almacenamiento regional."
     />
     <meta
       name="keywords"
-      content="contacto, logistica, transporte internacional, Dibiagi, Mendoza, Argentina"
+      content="contacto logistica, cotización transporte, presupuesto logístico, empresa de logística, transporte de cargas, operador logístico regional, Mendoza, Argentina, Chile, Uruguay, Paraguay, Dibiagi"
     />
     <link rel="canonical" href="https://dibiagi.com/contacto.html" />
+    <!-- Hreflang: Segmentación regional -->
+    <link
+      rel="alternate"
+      hreflang="es-AR"
+      href="https://dibiagi.com/contacto.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es-CL"
+      href="https://dibiagi.com/contacto.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es-PY"
+      href="https://dibiagi.com/contacto.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es-UY"
+      href="https://dibiagi.com/contacto.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt-BR"
+      href="https://dibiagi.com/contacto.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://dibiagi.com/contacto.html"
+    />
+    <!-- Geo-targeting -->
+    <meta name="geo.region" content="AR-M" />
+    <meta name="geo.placename" content="Mendoza, Argentina" />
+    <meta name="geo.position" content="-32.8895;-68.8458" />
+    <meta name="ICBM" content="-32.8895, -68.8458" />
     <link rel="icon" type="image/png" href="img/favicon-dibiagi.png" />
 
     <!-- Open Graph / Facebook -->
@@ -69,8 +105,73 @@
       onload="this.media = 'all'"
     />
 
-    <!-- Mi CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Mi CSS (non-blocking) -->
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <!-- Preload Hero Image for LCP -->
+    <link
+      rel="preload"
+      as="image"
+      href="img/contacto/hero-contacto.png"
+      fetchpriority="high"
+    />
+    <!-- Critical CSS Inlined -->
+    <style>
+      :root {
+        --dibiagi-red: #e1211b;
+        --dibiagi-blue: #0b224d;
+      }
+      .header-top-bar {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        min-height: 62px;
+      }
+      .navegador {
+        background-color: #e1211b !important;
+        padding: 0;
+        color: #fff;
+        min-height: 40px;
+      }
+      .hero-section {
+        position: relative;
+        height: 60vh;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        background-color: #000;
+        overflow: hidden;
+      }
+      .hero-img-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        filter: brightness(0.6);
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        margin: 0;
+      }
+      .header-logo {
+        width: 140px;
+        height: 46px;
+        object-fit: contain;
+      }
+      .lang-flag {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -83,6 +184,9 @@
                 src="img/index/logo-hero.png"
                 alt="DIBIAGI"
                 class="img-fluid header-logo"
+                width="140"
+                height="46"
+                decoding="async"
               />
             </a>
             <!-- Contactos -->
@@ -94,6 +198,9 @@
                   class="lang-flag"
                   onclick="changeLanguage('es')"
                   title="Español"
+                  width="24"
+                  height="24"
+                  decoding="async"
                 />
                 <img
                   src="https://flagcdn.com/w40/us.png"
@@ -101,7 +208,20 @@
                   class="lang-flag"
                   onclick="changeLanguage('en')"
                   title="English"
+                  width="24"
+                  height="24"
+                  decoding="async"
                 />
+                <!-- <img
+                  src="https://flagcdn.com/w40/br.png"
+                  alt="PT"
+                  class="lang-flag"
+                  onclick="changeLanguage('pt')"
+                  title="Português"
+                  width="24"
+                  height="24"
+                  decoding="async"
+                /> -->
               </div>
               <div class="contact-item">
                 <span class="contact-label" data-i18n="header-llamanos"
@@ -191,13 +311,31 @@
                     alt="ES"
                     class="lang-flag"
                     onclick="changeLanguage('es')"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <img
                     src="https://flagcdn.com/w40/us.png"
                     alt="EN"
                     class="lang-flag"
                     onclick="changeLanguage('en')"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
                   />
+                  <!-- <img
+                    src="https://flagcdn.com/w40/br.png"
+                    alt="PT"
+                    class="lang-flag"
+                    onclick="changeLanguage('pt')"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
+                  /> -->
                 </div>
               </li>
             </ul>
@@ -654,16 +792,41 @@
                   <img
                     src="img/contacto/galeria (1).jpg"
                     alt="Equipo Dibiagi"
+                    width="400"
+                    height="250"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="collage-item">
-                  <img src="img/contacto/galeria (2).jpg" alt="Instalaciones" />
+                  <img
+                    src="img/contacto/galeria (2).jpg"
+                    alt="Instalaciones"
+                    width="400"
+                    height="250"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
                 <div class="collage-item">
-                  <img src="img/contacto/galeria (3).jpg" alt="Operaciones" />
+                  <img
+                    src="img/contacto/galeria (3).jpg"
+                    alt="Operaciones"
+                    width="400"
+                    height="250"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
                 <div class="collage-item">
-                  <img src="img/contacto/galeria (4).jpg" alt="Grupo" />
+                  <img
+                    src="img/contacto/galeria (4).jpg"
+                    alt="Grupo"
+                    width="400"
+                    height="250"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               </div>
             </div>
@@ -678,6 +841,10 @@
             src="img/index/logos-dibiagi.jpg"
             alt="Nuestras Marcas"
             class="img-fluid"
+            width="1200"
+            height="150"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </section>
@@ -709,6 +876,10 @@
                   alt="Dibiagi Footer"
                   class="img-fluid mb-3"
                   style="max-width: 180px"
+                  width="180"
+                  height="60"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <p
                   class="small opacity-75 pe-lg-4"
@@ -936,9 +1107,12 @@
         </div>
       </footer>
     </main>
-    <script src="js/translations.js"></script>
-    <script src="js/i18n.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/translations.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
   </body>
 </html>

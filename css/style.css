@@ -13,6 +13,34 @@ body {
   font-family: "Imperial Script", cursive;
   font-weight: 400;
   text-transform: none;
+  font-size: 2.0em;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Soporte para videos verticales (Shorts/Reels) */
+.video-container.vertical {
+  padding-bottom: 177.77%; /* Proporción 9:16 */
+  max-width: 320px;       /* Limitamos el ancho para que no sea excesivamente alto */
+  margin: 0 auto;         /* Lo centramos en su columna */
+}
+
+.z-index-2 {
+  position: relative;
+  z-index: 2;
 }
 
 /* ============================================
@@ -28,8 +56,9 @@ body {
 }
 
 .header-logo {
-  max-width: 140px;
-  height: auto;
+  width: 140px;
+  height: 46px;
+  object-fit: contain;
 }
 
 .header-contacts {
@@ -44,7 +73,7 @@ body {
 
 .contact-label {
   font-size: 11px;
-  color: #666;
+  color: #555; /* Oscurecido para accesibilidad (así pasa el ratio de contraste) */
   line-height: 1.2;
 }
 
@@ -108,18 +137,28 @@ body {
 }
 
 .custom-toggler .navbar-toggler-icon {
-  color: #ffffff;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .hero {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../img/index/hero.png");
-  background-size: cover;
-  background-position: center;
+  position: relative;
   height: 80vh;
+  min-height: 500px; /* Evita que colapse en dispositivos pequeños antes de cargar estilos */
   display: flex;
   align-items: center;
+  background-color: #000; /* Fondo de seguridad */
+}
+
+.hero-img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  filter: brightness(0.6); /* Mismos filtros que el gradiente original */
 }
 
 .hero-badge {
@@ -276,7 +315,7 @@ body {
 }
 
 .impact-title .cursive-text {
-  font-size: 1.3em;
+  font-size: 2.0em;
   color: #fff;
 }
 
@@ -372,6 +411,7 @@ body {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
+  contain: layout style;
 }
 
 .service-card:hover {
@@ -380,10 +420,11 @@ body {
 }
 
 .card-img-wrapper {
-  height: 180px;
+  aspect-ratio: 412 / 180;
   overflow: hidden;
   border-radius: 18px;
   margin-bottom: 20px;
+  background-color: #f0f0f0;
 }
 
 .card-img-wrapper img {
@@ -409,7 +450,7 @@ body {
 
 .card-description {
   font-size: 0.85rem;
-  color: #666;
+  color: #555; /* Oscurecido para accesibilidad */
   line-height: 1.6;
   margin-bottom: 25px;
 }
@@ -849,7 +890,7 @@ body {
 
 .impact-title-transport .cursive-text {
   font-family: "Imperial Script", cursive;
-  font-size: 72px;
+  font-size: 2.0em;
   display: block;
 }
 

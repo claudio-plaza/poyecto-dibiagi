@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dibiagi Transporte - Transporte Internacional y Logística Integrada</title>
     <link rel="canonical" href="https://dibiagi.com/" />
+    <!-- Hreflang: Segmentación regional -->
+    <link rel="alternate" hreflang="es-AR" href="https://dibiagi.com/" />
+    <link rel="alternate" hreflang="es-CL" href="https://dibiagi.com/" />
+    <link rel="alternate" hreflang="es-PY" href="https://dibiagi.com/" />
+    <link rel="alternate" hreflang="es-UY" href="https://dibiagi.com/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://dibiagi.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://dibiagi.com/" />
 
 
     <!-- Meta SEO -->
     <meta
       name="description"
-      content="Dibiagi Transporte: Empresa líder en transporte internacional, logística y distribuciones en Argentina, Chile, Uruguay y Paraguay. Ubicados en Mendoza, brindamos soluciones integrales de carga."
+      content="Dibiagi Transporte: Empresa líder y confiable en transporte internacional, logística integral y comercio exterior en el Cono Sur. Especialistas en el corredor bioceánico."
     />
     <meta
       name="keywords"
-      content="transporte internacional, logistica, distribucion, carga pesada, Mendoza, Argentina, Chile, Uruguay, Paraguay, Dibiagi Transporte"
+      content="empresa de logística, transporte de cargas, transporte internacional, operador logístico, distribución eficiente, descarga, manipulación, consolidación de carga, depósito fiscal, transporte transandino, corredor bioceánico, logística verde, comercio exterior, COMEX, carga pesada, Mendoza, Argentina, Chile, Uruguay, Paraguay, Dibiagi Transporte"
     />
+    <!-- Geo-targeting -->
+    <meta name="geo.region" content="AR-M" />
+    <meta name="geo.placename" content="Mendoza, Argentina" />
+    <meta name="geo.position" content="-32.8895;-68.8458" />
+    <meta name="ICBM" content="-32.8895, -68.8458" />
     <meta name="author" content="Dibiagi Transporte" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#162C80" />
@@ -51,12 +63,17 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LogisticsService",
+      "@id": "https://dibiagi.com/#organization",
+      "@type": "Organization",
       "name": "Dibiagi Transporte",
       "alternateName": "Dibiagi Transporte Internacional",
       "url": "https://dibiagi.com/",
       "logo": "https://dibiagi.com/img/index/logo-hero.png",
-      "description": "Empresa líder en transporte internacional, logística y distribuciones en Argentina, Chile, Uruguay y Paraguay. Ubicados en Mendoza, brindamos soluciones integrales de carga.",
+      "image": "https://dibiagi.com/img/index/hero.png",
+      "description": "Empresa líder y confiable en transporte internacional, logística integral y comercio exterior en Argentina, Chile, Uruguay y Paraguay.",
+      "foundingDate": "1961",
+      "telephone": "+54 261 5873045",
+      "email": "contacto@dibiagi.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Rodríguez Peña 169, Luzuriaga",
@@ -65,8 +82,80 @@
         "postalCode": "5500",
         "addressCountry": "AR"
       },
-      "telephone": "+54 261 5873045",
-      "openingHours": "Mo-Fr 08:00-18:00",
+      "areaServed": [
+        {"@type": "Country", "name": "Argentina"},
+        {"@type": "Country", "name": "Chile"},
+        {"@type": "Country", "name": "Uruguay"},
+        {"@type": "Country", "name": "Paraguay"},
+        {"@type": "Country", "name": "Bolivia"},
+        {"@type": "Country", "name": "Brasil"}
+      ],
+      "department": [
+        {
+          "@type": "LocalBusiness",
+          "name": "Dibiagi Transporte - Sede Central Mendoza",
+          "image": "https://dibiagi.com/img/deposito/deposito-hero.png",
+          "telephone": "261 5873045",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rodríguez Peña 169, Luzuriaga",
+            "addressLocality": "Maipú",
+            "addressRegion": "Mendoza",
+            "addressCountry": "AR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -32.9351,
+            "longitude": -68.7905
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "Dibiagi Transporte - Terminal Buenos Aires",
+          "telephone": "+549 (011) 3577 0717",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Ramón Castillo 2500",
+            "addressLocality": "C.A.B.A.",
+            "addressRegion": "Buenos Aires",
+            "addressCountry": "AR"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "Dibiagi Transporte - Sucursal Los Andes, Chile",
+          "telephone": "+56 (342) 423 571",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Argentina Oriente 50 esq. Independencia",
+            "addressLocality": "Los Andes",
+            "addressRegion": "Valparaíso",
+            "addressCountry": "CL"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "Dibiagi Transporte - Sucursal Montevideo, Uruguay",
+          "telephone": "+598 2481 3000",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Bvar. Batlle y Ordoñez 2925, apto 01",
+            "addressLocality": "Montevideo",
+            "addressCountry": "UY"
+          }
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios Logísticos Integrales",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Transporte Internacional de Cargas"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Logística y Distribución"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Depósito Fiscal y Almacenamiento"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cargas Consolidadas y Refrigeradas"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Manipulación y Descarga de Mercaderías"}}
+        ]
+      },
       "sameAs": [
         "https://www.facebook.com/GrupoDibiagi/",
         "https://www.instagram.com/grupodibiagi/",
@@ -75,9 +164,13 @@
     }
     </script>
 
-    <!-- Fonts -->
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <!-- Preload hero LCP image with high priority -->
+    <link rel="preload" as="image" href="img/index/hero.png" fetchpriority="high" />
     <link
       href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
@@ -95,18 +188,30 @@
       onload="this.media='all'"
     />
 
-    <!-- Preload hero LCP image -->
-    <link rel="preload" as="image" href="img/index/hero.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
+      media="print"
+      onload="this.media='all'"
     />
     <!-- AOS CSS (non-blocking) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <!-- Mi CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Mi CSS (non-blocking) -->
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'" />
+    <!-- Critical CSS Inlined -->
+    <style>
+      :root { --dibiagi-red: #e1211b; --dibiagi-blue: #0b224d; }
+      .header-top-bar { background-color: #fff; border-bottom: 1px solid #eee; min-height: 62px; }
+      .navegador { background-color: #e1211b !important; padding: 0; color: #fff; min-height: 40px; }
+      .hero { position: relative; height: 80vh; min-height: 500px; display: flex; align-items: center; background-color: #000; overflow: hidden; }
+      .hero-img-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; filter: brightness(0.6); }
+      .z-index-2 { position: relative; z-index: 2; }
+      body { font-family: "Inter", sans-serif; overflow-x: hidden; margin: 0; }
+      .header-logo { width: 140px; height: 46px; object-fit: contain; }
+      .lang-flag { width: 24px; height: 24px; cursor: pointer; }
+    </style>
   </head>
   <body>
     <header>
@@ -127,8 +232,9 @@
             <!-- Contactos -->
             <div class="header-contacts d-none d-md-flex align-items-center">
               <div class="lang-selector me-4 pe-4 border-end">
-                <img src="img/index/argentina.png" alt="ES" class="lang-flag" onclick="changeLanguage('es')" title="Español">
-                <img src="https://flagcdn.com/w40/us.png" alt="EN" class="lang-flag" onclick="changeLanguage('en')" title="English">
+                <img src="img/index/argentina.png" alt="ES" class="lang-flag" onclick="changeLanguage('es')" title="Español" aria-label="Cambiar a Español" width="24" height="24" decoding="async">
+                <img src="https://flagcdn.com/w40/us.png" alt="EN" class="lang-flag" onclick="changeLanguage('en')" title="English" aria-label="Switch to English" width="24" height="24" decoding="async">
+                <!-- <img src="https://flagcdn.com/w40/br.png" alt="PT" class="lang-flag" onclick="changeLanguage('pt')" title="Português" aria-label="Mudar para Português" width="24" height="24" decoding="async"> -->
               </div>
               <div class="contact-item">
                 <span class="contact-label" data-i18n="header-llamanos">Llamanos en Argentina al</span>
@@ -183,16 +289,28 @@
               <!-- Selector de idioma móvil -->
               <li class="nav-item d-lg-none py-3 border-top">
                 <div class="lang-selector justify-content-center">
-                  <img src="img/index/argentina.png" alt="ES" class="lang-flag" onclick="changeLanguage('es')">
-                  <img src="https://flagcdn.com/w40/us.png" alt="EN" class="lang-flag" onclick="changeLanguage('en')">
+                  <img src="img/index/argentina.png" alt="ES" class="lang-flag" onclick="changeLanguage('es')" width="24" height="24" loading="lazy" decoding="async">
+                  <img src="https://flagcdn.com/w40/us.png" alt="EN" class="lang-flag" onclick="changeLanguage('en')" width="24" height="24" loading="lazy" decoding="async">
+                  <!-- <img src="https://flagcdn.com/w40/br.png" alt="PT" class="lang-flag" onclick="changeLanguage('pt')" width="24" height="24" loading="lazy" decoding="async"> -->
                 </div>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="hero position-relative">
-        <div class="container h-100">
+      <div class="hero position-relative overflow-hidden">
+        <!-- Imagen Hero real para priorizar LCP manteniendo el diseño -->
+        <img 
+          src="img/index/hero.png" 
+          alt="Dibiagi Transporte Internacional Hero" 
+          class="hero-img-bg"
+          fetchpriority="high"
+          loading="eager"
+          decoding="sync"
+          width="1920"
+          height="800"
+        >
+        <div class="container h-100 position-relative z-index-2">
           <div class="row h-100 align-items-center">
             <div class="col-lg-6 offset-lg-6 text-white text-end">
               <span class="badge hero-badge mb-3" data-i18n="hero-badge"
@@ -220,6 +338,7 @@
             </div>
           </div>
         </div>
+        <!--
         <a
           href="https://wa.me/5492615873045"
           target="_blank"
@@ -227,6 +346,7 @@
         >
           <i class="fa-brands fa-whatsapp"></i>
         </a>
+        -->
       </div>
     </header>
 <!--Flags Section-->
@@ -241,10 +361,11 @@
               width="60"
               height="60"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="flag-wrapper" data-bs-toggle="tooltip" title="Chile">
-            <img src="img/index/chile.png" alt="Chile" class="flag-icon" width="60" height="60" loading="lazy" />
+            <img src="img/index/chile.png" alt="Chile" class="flag-icon" width="60" height="60" loading="lazy" decoding="async" />
           </div>
           <div class="flag-wrapper" data-bs-toggle="tooltip" title="Paraguay">
             <img
@@ -254,13 +375,14 @@
               width="60"
               height="60"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="flag-wrapper" data-bs-toggle="tooltip" title="Uruguay">
-            <img src="img/index/uruguay.png" alt="Uruguay" class="flag-icon" width="60" height="60" loading="lazy" />
+            <img src="img/index/uruguay.png" alt="Uruguay" class="flag-icon" width="60" height="60" loading="lazy" decoding="async" />
           </div>
           <div class="flag-wrapper" data-bs-toggle="tooltip" title="Brasil">
-            <img src="img/index/brasil.png" alt="Brasil" class="flag-icon" width="60" height="60" loading="lazy" />
+            <img src="img/index/brasil.png" alt="Brasil" class="flag-icon" width="60" height="60" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -289,35 +411,17 @@
               <a href="nosotros.html" class="btn btn-conoce-blue mb-5" style="background-color: #162C80;" data-i18n="hero-conocer">Conocer más</a>
             </div>
             <div class="col-lg-6">
-              <div class="video-placeholder position-relative">
-                <video
-                  data-src="img/index/Video Dibiagi Institucional 2023.mp4"
-                  class="img-fluid rounded shadow"
-                  loop
-                  muted
-                  playsinline
-                  controls
-                  preload="none"
-                  poster="img/index/img-elejirnos.png"
-                  width="640"
-                  height="360"
-                >
-                <div class="play-button">
-                  <i class="bi bi-play-fill text-white fs-1"></i>
-                  <!-- Usando un SVG simple por si no tienen Bootstrap Icons -->
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="60"
-                    height="60"
-                    fill="white"
-                    class="bi bi-play-circle-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
-                    />
-                  </svg>
-                </div>
+              <div class="video-container shadow rounded overflow-hidden">
+                <iframe 
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/fIiBJ9Dgy1s?autoplay=1&mute=1&controls=0&rel=0" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
               </div>
             </div>
           </div>
@@ -627,7 +731,7 @@
         <div class="map-container position-relative">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.743902275142!2d-68.80643922436333!3d-32.931363871116744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0c0f287f3441%3A0xed5f96a3afa2af2f!2sDibiagi%20Transporte%20Internacional%20S.A.!5e0!3m2!1ses-419!2sar!4v1768882814140!5m2!1ses-419!2sar" 
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación Dibiagi Transporte"></iframe>
         </div>
       </section>
 
@@ -667,9 +771,9 @@
               <!-- Col 3: Social Icons -->
               <div class="col-lg-4 col-md-3 col-6 text-lg-end">
                 <div class="d-flex gap-3 justify-content-lg-end social-icons fs-4">
-                  <a target="_blank" href="https://www.linkedin.com/company/dibiagi-transporte-internacional/" class="text-white opacity-75 hover-opacity-100"><i class="fab fa-linkedin"></i></a>
-                  <a target="_blank" href="https://www.facebook.com/GrupoDibiagi/" class="text-white opacity-75 hover-opacity-100"><i class="fab fa-facebook"></i></a>
-                  <a target="_blank" href="https://www.instagram.com/grupodibiagi/" class="text-white opacity-75 hover-opacity-100"><i class="fab fa-instagram"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/company/dibiagi-transporte-internacional/" class="text-white opacity-75 hover-opacity-100" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/GrupoDibiagi/" class="text-white opacity-75 hover-opacity-100" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                  <a target="_blank" href="https://www.instagram.com/grupodibiagi/" class="text-white opacity-75 hover-opacity-100" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>

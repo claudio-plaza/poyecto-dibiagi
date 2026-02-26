@@ -39,6 +39,17 @@
   <FilesMatch "\.(js|css|xml|gz|html|svg)$">
     Header append Vary Accept-Encoding
   </FilesMatch>
+  # Cache-Control inmutable para assets estáticos
+  <FilesMatch "\.(jpg|jpeg|png|webp|avif|gif|ico|svg|woff|woff2|mp4)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  # Seguridad
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# Soporte WebP
+<IfModule mod_mime.c>
+  AddType image/webp .webp
 </IfModule>
 
 # Forzar HTTPS

@@ -3,18 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Impacto Ambiental - Dibiagi Transporte</title>
+    <title data-i18n="impact-title-page">
+      Impacto Ambiental - Dibiagi Transporte
+    </title>
 
     <!-- Meta SEO -->
     <meta
       name="description"
-      content="Políticas de sustentabilidad y cuidado del medio ambiente de Dibiagi Transporte. Logística verde, energías renovables y plan de forestación."
+      content="Pioneros en logística verde y sustentable. Programa de forestación y energías renovables para reducir el impacto ambiental del transporte."
     />
     <meta
       name="keywords"
-      content="sustentabilidad, medio ambiente, logistica verde, forestacion, energias renovables, Dibiagi"
+      content="logística verde, sustentabilidad, transporte sustentable, impacto ambiental, forestación, energías renovables, empresa de logística ética, transporte ecológico, Mendoza, Argentina, Dibiagi"
     />
     <link rel="canonical" href="https://dibiagi.com/impacto-ambiental.html" />
+    <!-- Hreflang: Segmentación regional -->
+    <link
+      rel="alternate"
+      hreflang="es-AR"
+      href="https://dibiagi.com/impacto-ambiental.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es-CL"
+      href="https://dibiagi.com/impacto-ambiental.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es-PY"
+      href="https://dibiagi.com/impacto-ambiental.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es-UY"
+      href="https://dibiagi.com/impacto-ambiental.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt-BR"
+      href="https://dibiagi.com/impacto-ambiental.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://dibiagi.com/impacto-ambiental.html"
+    />
+    <!-- Geo-targeting -->
+    <meta name="geo.region" content="AR-M" />
+    <meta name="geo.placename" content="Mendoza, Argentina" />
+    <meta name="geo.position" content="-32.8895;-68.8458" />
+    <meta name="ICBM" content="-32.8895, -68.8458" />
     <meta name="robots" content="index, follow" />
     <link rel="icon" type="image/png" href="img/favicon-dibiagi.png" />
 
@@ -25,7 +63,7 @@
       href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
 
     <!-- FontAwesome -->
@@ -33,7 +71,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
 
     <!-- Bootstrap CSS -->
@@ -41,11 +79,76 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
 
-    <!-- Mi CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Mi CSS (non-blocking) -->
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <!-- Preload Hero Image for LCP -->
+    <link
+      rel="preload"
+      as="image"
+      href="img/impacto ambiental/hero-impacto.jpg"
+      fetchpriority="high"
+    />
+    <!-- Critical CSS Inlined -->
+    <style>
+      :root {
+        --dibiagi-red: #e1211b;
+        --dibiagi-blue: #0b224d;
+      }
+      .header-top-bar {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        min-height: 62px;
+      }
+      .navegador {
+        background-color: #e1211b !important;
+        padding: 0;
+        color: #fff;
+        min-height: 40px;
+      }
+      .hero-section {
+        position: relative;
+        height: 60vh;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        background-color: #000;
+        overflow: hidden;
+      }
+      .hero-img-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        filter: brightness(0.6);
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        margin: 0;
+      }
+      .header-logo {
+        width: 140px;
+        height: 46px;
+        object-fit: contain;
+      }
+      .lang-flag {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -59,12 +162,52 @@
                 src="img/index/logo-hero.png"
                 alt="DIBIAGI"
                 class="img-fluid header-logo"
+                width="140"
+                height="46"
+                decoding="async"
               />
             </a>
             <!-- Contactos -->
             <div class="header-contacts d-none d-md-flex align-items-center">
+              <div class="lang-selector me-4 pe-4 border-end">
+                <img
+                  src="img/index/argentina.png"
+                  alt="ES"
+                  class="lang-flag"
+                  onclick="changeLanguage('es')"
+                  title="Español"
+                  aria-label="Cambiar a Español"
+                  width="24"
+                  height="24"
+                  decoding="async"
+                />
+                <img
+                  src="https://flagcdn.com/w40/us.png"
+                  alt="EN"
+                  class="lang-flag"
+                  onclick="changeLanguage('en')"
+                  title="English"
+                  aria-label="Switch to English"
+                  width="24"
+                  height="24"
+                  decoding="async"
+                />
+                <!-- <img
+                  src="https://flagcdn.com/w40/br.png"
+                  alt="PT"
+                  class="lang-flag"
+                  onclick="changeLanguage('pt')"
+                  title="Português"
+                  aria-label="Mudar para Português"
+                  width="24"
+                  height="24"
+                  decoding="async"
+                /> -->
+              </div>
               <div class="contact-item">
-                <span class="contact-label">Llamanos en Argentina al</span>
+                <span class="contact-label" data-i18n="header-llamanos"
+                  >Llamanos en Argentina al</span
+                >
                 <a href="tel:+542615873045" class="contact-phone"
                   >261 5873045</a
                 >
@@ -105,21 +248,76 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="index.html" data-i18n="nav-inicio"
+                  >Inicio</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="transporte.html"
+                <a
+                  class="nav-link"
+                  href="transporte.html"
+                  data-i18n="nav-transporte"
                   >Transporte de cargas</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="deposito.html">Depósito logístico</a>
+                <a
+                  class="nav-link"
+                  href="deposito.html"
+                  data-i18n="nav-deposito"
+                  >Depósito logístico</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <a
+                  class="nav-link"
+                  href="nosotros.html"
+                  data-i18n="nav-nosotros"
+                  >Nosotros</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a
+                  class="nav-link"
+                  href="contacto.html"
+                  data-i18n="nav-contacto"
+                  >Contacto</a
+                >
+              </li>
+              <!-- Selector de idioma móvil -->
+              <li class="nav-item d-lg-none py-3 border-top">
+                <div class="lang-selector justify-content-center">
+                  <img
+                    src="img/index/argentina.png"
+                    alt="ES"
+                    class="lang-flag"
+                    onclick="changeLanguage('es')"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <img
+                    src="https://flagcdn.com/w40/us.png"
+                    alt="EN"
+                    class="lang-flag"
+                    onclick="changeLanguage('en')"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <!-- <img
+                    src="https://flagcdn.com/w40/br.png"
+                    alt="PT"
+                    class="lang-flag"
+                    onclick="changeLanguage('pt')"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
+                  /> -->
+                </div>
               </li>
             </ul>
           </div>
@@ -131,7 +329,10 @@
           <div class="row align-items-center h-100">
             <div class="col-lg-12 text-center text-white">
               <div class="impact-hero-content text-end">
-                <h1 class="display-1 fw-bold mb-0" data-i18n="index-impacto-title">
+                <h1
+                  class="display-1 fw-bold mb-0"
+                  data-i18n="index-impacto-title"
+                >
                   Cargas con <br />
                   menor impacto <br />
                   <span class="cursive-text">ambiental</span>
@@ -140,11 +341,14 @@
                   3% de la tarifa de nuestro servicio es <br />
                   destinada en acciones sustentables.
                 </p>
-                <p class="h4 mb-5" data-i18n="impacto-hero-hashtag">#Acompañanos</p>
+                <p class="h4 mb-5" data-i18n="impacto-hero-hashtag">
+                  #Acompañanos
+                </p>
               </div>
             </div>
           </div>
         </div>
+        <!--
         <a
           href="https://wa.me/5492615873045"
           target="_blank"
@@ -152,6 +356,7 @@
         >
           <i class="fa-brands fa-whatsapp"></i>
         </a>
+        -->
       </div>
 
       <!-- Flags Section -->
@@ -167,16 +372,32 @@
                 src="img/index/argentina.png"
                 alt="Argentina"
                 class="flag-icon"
+                width="60"
+                height="60"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div class="flag-wrapper" data-bs-toggle="tooltip" title="Chile">
-              <img src="img/index/chile.png" alt="Chile" class="flag-icon" />
+              <img
+                src="img/index/chile.png"
+                alt="Chile"
+                class="flag-icon"
+                width="60"
+                height="60"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="flag-wrapper" data-bs-toggle="tooltip" title="Paraguay">
               <img
                 src="img/index/paraguay.png"
                 alt="Paraguay"
                 class="flag-icon"
+                width="60"
+                height="60"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div class="flag-wrapper" data-bs-toggle="tooltip" title="Uruguay">
@@ -184,10 +405,22 @@
                 src="img/index/uruguay.png"
                 alt="Uruguay"
                 class="flag-icon"
+                width="60"
+                height="60"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div class="flag-wrapper" data-bs-toggle="tooltip" title="Brasil">
-              <img src="img/index/brasil.png" alt="Brasil" class="flag-icon" />
+              <img
+                src="img/index/brasil.png"
+                alt="Brasil"
+                class="flag-icon"
+                width="60"
+                height="60"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
         </div>
@@ -200,14 +433,19 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
-              <h2 class="impact-section-title mb-4">Logística Sustentable</h2>
-              <p class="feature-text">
+              <h2
+                class="impact-section-title mb-4"
+                data-i18n="impact-sustentable-title"
+              >
+                Logística Sustentable
+              </h2>
+              <p class="feature-text" data-i18n="impact-sustentable-p1">
                 La política de sustentabilidad de Grupo Dibiagi nace con el
                 objeto de compensar las emisiones de CO2 generadas por la
                 actividad logística y contribuir a la reducción de la huella de
                 carbono.
               </p>
-              <p class="feature-text">
+              <p class="feature-text" data-i18n="impact-sustentable-p2">
                 Para hacer tangible este objetivo destinamos
                 <strong
                   >3% de la tarifa de nuestros servicios a la inversión en
@@ -223,19 +461,26 @@
               </p>
             </div>
             <div class="col-lg-6">
-              <div class="feature-img-wrapper position-relative">
-                <video
-                  src="img/impacto ambiental/Cargas con menor impacto ambiental.mp4"
-                  alt="Logística Sustentable"
-                  class="feature-img"
-                  autoplay
-                  muted
-                  loop
-                  controls
+              <div class="video-container shadow rounded overflow-hidden">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/Kh3DsTSXxpg?rel=0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  allowfullscreen
+                  loading="lazy"
                 >
-                <div class="play-button-center">
-                  <i class="fas fa-play"></i>
-                </div>
+                </iframe>
               </div>
             </div>
           </div>
@@ -247,18 +492,35 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 py-5">
-              <h2 class="text-white fw-bold mb-4 display-5">¿Qué implica?</h2>
+              <h2
+                class="text-white fw-bold mb-4 display-5"
+                data-i18n="impact-implica-title"
+              >
+                ¿Qué implica?
+              </h2>
               <ul class="impact-list">
-                <li>Capacitación de los colaboradores</li>
-                <li>Autoabastecimiento y ahorro energético</li>
-                <li>Reducción de emisiones de CO2</li>
-                <li>Gestión de los recursos y sus impactos</li>
-                <li>
+                <li data-i18n="impact-implica-item-1">
+                  Capacitación de los colaboradores
+                </li>
+                <li data-i18n="impact-implica-item-2">
+                  Autoabastecimiento y ahorro energético
+                </li>
+                <li data-i18n="impact-implica-item-3">
+                  Reducción de emisiones de CO2
+                </li>
+                <li data-i18n="impact-implica-item-4">
+                  Gestión de los recursos y sus impactos
+                </li>
+                <li data-i18n="impact-implica-item-5">
                   Optimización de gastos generales de funcionamiento y
                   mantenimiento
                 </li>
-                <li>Modernización de los sistemas de gestión</li>
-                <li>Aunar esfuerzos por el bienestar corporativo</li>
+                <li data-i18n="impact-implica-item-6">
+                  Modernización de los sistemas de gestión
+                </li>
+                <li data-i18n="impact-implica-item-7">
+                  Aunar esfuerzos por el bienestar corporativo
+                </li>
               </ul>
             </div>
           </div>
@@ -275,15 +537,25 @@
                   src="img/impacto ambiental/Cmo se aplica a nuestra organizacin.jpg"
                   alt="Aplicación"
                   class="feature-img"
+                  width="700"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
             <div class="col-lg-6 ps-lg-5">
-              <h2 class="text-impact-green fw-bold mb-4 display-6">
+              <h2
+                class="text-impact-green fw-bold mb-4 display-6"
+                data-i18n="impact-aplica-title"
+              >
                 ¿Cómo se aplica a nuestra <br />
                 organización?
               </h2>
-              <p class="feature-text text-secondary">
+              <p
+                class="feature-text text-secondary"
+                data-i18n="impact-aplica-p1"
+              >
                 Incorporación de tecnología: Contamos con una moderna flota de
                 tractores dotados de tecnología EURO5 y EURO6, reduciendo las
                 emisiones de CO2 por kilómetro recorrido. Entre 2018 y 2019
@@ -291,7 +563,10 @@
                 Volvo, teniendo en cuenta que la seguridad al volante hace la
                 diferencia.
               </p>
-              <p class="feature-text text-secondary">
+              <p
+                class="feature-text text-secondary"
+                data-i18n="impact-aplica-p2"
+              >
                 Capacitación al volante: Instruimos a nuestros choferes con
                 nuevos conocimientos para optimizar el consumo y rendimiento
                 energético de las unidades y sumamos técnicas de manejo
@@ -307,10 +582,13 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
-              <h2 class="text-white fw-bold mb-4">
+              <h2
+                class="text-white fw-bold mb-4"
+                data-i18n="impact-autoabast-title"
+              >
                 Autoabastecimiento energético
               </h2>
-              <p class="opacity-90">
+              <p class="opacity-90" data-i18n="impact-autoabast-p1">
                 Instalación de parque solar en Mendoza, para el
                 autoabastecimiento energético del predio logístico y la
                 producción de energía. Plan de ejecución 2019 – 2020: puesta en
@@ -324,6 +602,10 @@
                   src="img/impacto ambiental/Autoabastecimiento energtico.jpg"
                   alt="Parque Solar"
                   class="feature-img"
+                  width="700"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -341,17 +623,26 @@
                   src="img/impacto ambiental/Almacenamiento.jpg"
                   alt="Almacenamiento"
                   class="feature-img"
+                  width="700"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
             <div class="col-lg-6 ps-lg-5">
-              <h2 class="impact-section-title mb-4">Almacenamiento</h2>
-              <p class="feature-text">
+              <h2
+                class="impact-section-title mb-4"
+                data-i18n="impact-almacen-title"
+              >
+                Almacenamiento
+              </h2>
+              <p class="feature-text" data-i18n="impact-almacen-p1">
                 Nuestros depósitos permiten realizar las tareas diarias bajo
                 condiciones que facilitan el movimiento de la mercadería,
                 optimizando tiempos y recursos durante la estadía de la carga.
               </p>
-              <p class="feature-text">
+              <p class="feature-text" data-i18n="impact-almacen-p2">
                 El complejo de exportaciones y comercio exterior en Mendoza,
                 además cuenta con una amplia y moderna infraestructura,
                 realizada con paneles aislantes para acondicionar ambientes con
@@ -359,7 +650,7 @@
                 para el máximo aprovechamiento de los recursos naturales de
                 iluminación.
               </p>
-              <p class="feature-text">
+              <p class="feature-text" data-i18n="impact-almacen-p3">
                 También se destacan los amplios espacios para el desarrollo de
                 una operatoria rápida y eficiente en consolidaciones y
                 desconsolidaciones aportando mayor comodidad y desempeño en la
@@ -375,14 +666,19 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
-              <h2 class="text-white fw-bold mb-4">Distribución verde</h2>
-              <p class="opacity-90">
+              <h2
+                class="text-white fw-bold mb-4"
+                data-i18n="impact-verde-title"
+              >
+                Distribución verde
+              </h2>
+              <p class="opacity-90" data-i18n="impact-verde-p1">
                 La distribución verde tiene por objetivo hacer más eficiente el
                 trayecto de las mercancías, ahorrando combustible y cantidad de
                 km recorridos. Pensar en puntos de almacenaje y distribución
                 próximos y directos facilitando el canal logístico.
               </p>
-              <p class="opacity-90">
+              <p class="opacity-90" data-i18n="impact-verde-p2">
                 En este contexto Dibiagi Transporte Internacional, trabaja
                 coordinadamente con sus clientes realizando el almacenaje y
                 distribución de los productos desde Mendoza hacia al resto del
@@ -416,7 +712,7 @@
         <div class="container h-100">
           <div class="row h-100 align-items-center">
             <div class="col-lg-10 offset-lg-1 text-center text-white">
-              <h2 class="display-6 fw-bold">
+              <h2 class="display-6 fw-bold" data-i18n="impact-quote">
                 Trabajamos diariamente conduciendo y movilizando la logística de
                 grandes empresas en Argentina y países limítrofes, siendo
                 conscientes de la sustentabilidad como una herramienta para
@@ -442,8 +738,13 @@
               </div>
             </div>
             <div class="col-lg-6 ps-lg-5">
-              <h2 class="impact-section-title mb-4">Empaquetamiento</h2>
-              <p class="feature-text">
+              <h2
+                class="impact-section-title mb-4"
+                data-i18n="impact-empaque-title"
+              >
+                Empaquetamiento
+              </h2>
+              <p class="feature-text" data-i18n="impact-empaque-p1">
                 Diariamente tratamos de disminuir la cantidad de materiales para
                 embalar un cargamento o utilizar insumos bio-degradables sin
                 descuidar la protección de la carga. Como tercer alternativa de
@@ -461,8 +762,13 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
-              <h2 class="text-white fw-bold mb-4">Reciclaje de desechos</h2>
-              <p class="opacity-90">
+              <h2
+                class="text-white fw-bold mb-4"
+                data-i18n="impact-reciclaje-title"
+              >
+                Reciclaje de desechos
+              </h2>
+              <p class="opacity-90" data-i18n="impact-reciclaje-p1">
                 Al consolidar y desconsolidar cargas que ingresan a nuestros
                 depósitos, cientos de kilogramos de plástico y cartón quedan en
                 desuso después de haber cumplido su función. Estos materiales
@@ -497,18 +803,21 @@
         <div class="container py-5">
           <div class="row mb-5">
             <div class="col-lg-12">
-              <h2 class="display-3 fw-bold text-white mb-4">
+              <h2
+                class="display-3 fw-bold text-white mb-4"
+                data-i18n="impact-forest-title"
+              >
                 Plan de <span class="cursive-text">forestación</span>
               </h2>
             </div>
             <div class="col-lg-6 text-white pe-lg-5">
-              <p class="opacity-90">
+              <p class="opacity-90" data-i18n="impact-forest-p1">
                 Desde hace algunos años comenzamos a trabajar en el Plan de
                 Forestación, un proyecto en donde invertimos en el cultivo de
                 bosques, sumando nuestro aporte a la disminución de la huella de
                 carbono y contribuyendo a la generación de oxígeno.
               </p>
-              <p class="opacity-90">
+              <p class="opacity-90" data-i18n="impact-forest-p2">
                 En conjunto con distintas áreas de la empresa planificamos
                 estrategias activas en donde mes a mes se destina 3% de nuestra
                 facturación al desarrollo agrícola y forestal de una propiedad
@@ -516,7 +825,7 @@
               </p>
             </div>
             <div class="col-lg-6 text-white ps-lg-5">
-              <p class="opacity-90">
+              <p class="opacity-90" data-i18n="impact-forest-p3">
                 A través de la optimización de recursos, la plantación se
                 mantiene en activo crecimiento, gracias al aporte de un
                 suministro hídrico continuo a través de la reutilización de
@@ -533,14 +842,17 @@
             class="objetivos-container mt-5 p-4 p-md-5 rounded-4 border border-white border-opacity-25"
             style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px)"
           >
-            <h3 class="text-white fw-bold mb-5 text-center">
+            <h3
+              class="text-white fw-bold mb-5 text-center"
+              data-i18n="impact-obj-title"
+            >
               Objetivos del proyecto
             </h3>
             <div class="row g-4">
               <div class="col-lg-3 col-md-6">
                 <div class="objetivo-card text-center p-4">
                   <div class="obj-number mb-3">1</div>
-                  <p class="small text-white">
+                  <p class="small text-white" data-i18n="impact-obj-1">
                     Contribuir a la lucha contra el cambio climático.
                   </p>
                 </div>
@@ -548,7 +860,7 @@
               <div class="col-lg-3 col-md-6">
                 <div class="objetivo-card text-center p-4">
                   <div class="obj-number mb-3">2</div>
-                  <p class="small text-white">
+                  <p class="small text-white" data-i18n="impact-obj-2">
                     Fortalecer los sistemas forestales existentes, como
                     sumideros de CO2.
                   </p>
@@ -557,7 +869,7 @@
               <div class="col-lg-3 col-md-6">
                 <div class="objetivo-card text-center p-4">
                   <div class="obj-number mb-3">3</div>
-                  <p class="small text-white">
+                  <p class="small text-white" data-i18n="impact-obj-3">
                     Participar en el desarrollo de las economías locales,
                     creando empleo verde en la medida en que los trabajos de
                     reforestación y mantenimiento son llevados a cabo por los
@@ -568,7 +880,7 @@
               <div class="col-lg-3 col-md-6">
                 <div class="objetivo-card text-center p-4">
                   <div class="obj-number mb-3">4</div>
-                  <p class="small text-white">
+                  <p class="small text-white" data-i18n="impact-obj-4">
                     Generar un espacio en donde el CO2 disperso en la atmósfera
                     pueda absorberse, ser almacenado y utilizado como
                     combustible de crecimiento para estos árboles y a la vez ser
@@ -619,7 +931,10 @@
                   class="img-fluid mb-3"
                   style="max-width: 180px"
                 />
-                <p class="small opacity-75 pe-lg-4" data-i18n="footer-description">
+                <p
+                  class="small opacity-75 pe-lg-4"
+                  data-i18n="footer-description"
+                >
                   Trabajamos para ser la <strong>Empresa Líder</strong> en la
                   prestación de servicios logísticos en Argentina y países
                   limítrofes.
@@ -632,17 +947,33 @@
                 <div class="row">
                   <div class="col-6">
                     <ul class="list-unstyled footer-links">
-                      <li><a href="index.html" data-i18n="nav-inicio">Inicio</a></li>
                       <li>
-                        <a href="transporte.html" data-i18n="nav-transporte">Transporte de cargas</a>
+                        <a href="index.html" data-i18n="nav-inicio">Inicio</a>
                       </li>
-                      <li><a href="deposito.html" data-i18n="nav-deposito">Depósito logístico</a></li>
+                      <li>
+                        <a href="transporte.html" data-i18n="nav-transporte"
+                          >Transporte de cargas</a
+                        >
+                      </li>
+                      <li>
+                        <a href="deposito.html" data-i18n="nav-deposito"
+                          >Depósito logístico</a
+                        >
+                      </li>
                     </ul>
                   </div>
                   <div class="col-6">
                     <ul class="list-unstyled footer-links">
-                      <li><a href="nosotros.html" data-i18n="nav-nosotros">Nosotros</a></li>
-                      <li><a href="contacto.html" data-i18n="nav-contacto">Contacto</a></li>
+                      <li>
+                        <a href="nosotros.html" data-i18n="nav-nosotros"
+                          >Nosotros</a
+                        >
+                      </li>
+                      <li>
+                        <a href="contacto.html" data-i18n="nav-contacto"
+                          >Contacto</a
+                        >
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -683,14 +1014,22 @@
             <div class="row g-4">
               <!-- Mendoza -->
               <div class="col-lg col-md-6">
-                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-mendoza">Mendoza</h6>
-                <p class="small opacity-75 mb-1" data-i18n="footer-mendoza-desc">
+                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-mendoza">
+                  Mendoza
+                </h6>
+                <p
+                  class="small opacity-75 mb-1"
+                  data-i18n="footer-mendoza-desc"
+                >
                   Complejo de Operaciones Logísticos y Comercio Exterior
                 </p>
                 <a
                   target="_blank"
                   href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A./@-32.9313638,-68.8064392,17z/data=!3m1!4b1!4m5!3m4!1s0x967e0c0f287f3441:0xed5f96a3afa2af2f!8m2!3d-32.9313638!4d-68.8042504"
-                  ><p class="small opacity-75 mb-1" data-i18n="footer-mendoza-addr">
+                  ><p
+                    class="small opacity-75 mb-1"
+                    data-i18n="footer-mendoza-addr"
+                  >
                     Rodríguez Peña 169, Luzuriaga, Maipú, Mendoza. Argentina
                   </p></a
                 >
@@ -701,8 +1040,18 @@
 
               <!-- Buenos Aires -->
               <div class="col-lg col-md-6">
-                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-buenos-aires">Buenos Aires</h6>
-                <p class="small opacity-75 mb-1" data-i18n="footer-terminal-carga">Terminal de Carga:</p>
+                <h6
+                  class="fw-bold mb-2 text-white"
+                  data-i18n="footer-buenos-aires"
+                >
+                  Buenos Aires
+                </h6>
+                <p
+                  class="small opacity-75 mb-1"
+                  data-i18n="footer-terminal-carga"
+                >
+                  Terminal de Carga:
+                </p>
                 <a
                   target="_blank"
                   href="https://www.google.com.ar/maps/place/Murchison+Deposito+Fiscal/@-34.5739888,-58.3923537,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb5678f1b6c83:0xc5d4a0ffb5f4c306!8m2!3d-34.5739888!4d-58.3923537!16s%2Fg%2F12hm2mht1?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
@@ -720,12 +1069,22 @@
 
               <!-- Chubut -->
               <div class="col-lg col-md-6">
-                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-chubut">Chubut</h6>
-                <p class="small opacity-75 mb-1" data-i18n="footer-terminal-carga">Terminal de Carga:</p>
+                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-chubut">
+                  Chubut
+                </h6>
+                <p
+                  class="small opacity-75 mb-1"
+                  data-i18n="footer-terminal-carga"
+                >
+                  Terminal de Carga:
+                </p>
                 <a
                   target="_blank"
                   href="https://www.google.com/maps/place/Av.+Hip%C3%B3lito+Yrigoyen+4324,+U9003+Comodoro+Rivadavia,+Chubut/@-45.8949422,-67.5420258,17z/data=!3m1!4b1!4m5!3m4!1s0xbde5ab455fafb471:0x26aa64c8419ab54d!8m2!3d-45.8949422!4d-67.5398371?shorturl=1"
-                  ><p class="small opacity-75 mb-1" data-i18n="footer-chubut-addr">
+                  ><p
+                    class="small opacity-75 mb-1"
+                    data-i18n="footer-chubut-addr"
+                  >
                     Av. Hipólito Yrigoyen 4324, Comodoro Rivadavia, Chubut, Arg.
                   </p></a
                 >
@@ -736,12 +1095,25 @@
 
               <!-- Chile -->
               <div class="col-lg col-md-6">
-                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-chile-sucursal">Chile</h6>
-                <p class="small opacity-75 mb-1" data-i18n="footer-terminal-carga">Terminal de Carga:</p>
+                <h6
+                  class="fw-bold mb-2 text-white"
+                  data-i18n="footer-chile-sucursal"
+                >
+                  Chile
+                </h6>
+                <p
+                  class="small opacity-75 mb-1"
+                  data-i18n="footer-terminal-carga"
+                >
+                  Terminal de Carga:
+                </p>
                 <a
                   target="_blank"
                   href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A.+Sucursal+Los+Andes+-+Chile/@-32.8315975,-70.5916638,17z/data=!3m1!4b1!4m6!3m5!1s0x9688051c8585707f:0xf7721d36314659cf!8m2!3d-32.8315975!4d-70.5916638!16s%2Fg%2F11ghff05rw?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
-                  ><p class="small opacity-75 mb-1" data-i18n="footer-chile-addr">
+                  ><p
+                    class="small opacity-75 mb-1"
+                    data-i18n="footer-chile-addr"
+                  >
                     Av. Argentina Oriente 50 esq. Independencia, Los Andes,
                     Chile.
                   </p></a
@@ -754,12 +1126,25 @@
 
               <!-- Uruguay -->
               <div class="col-lg col-md-6">
-                <h6 class="fw-bold mb-2 text-white" data-i18n="footer-uruguay-sucursal">Uruguay</h6>
-                <p class="small opacity-75 mb-1" data-i18n="footer-terminal-carga">Terminal de Carga:</p>
+                <h6
+                  class="fw-bold mb-2 text-white"
+                  data-i18n="footer-uruguay-sucursal"
+                >
+                  Uruguay
+                </h6>
+                <p
+                  class="small opacity-75 mb-1"
+                  data-i18n="footer-terminal-carga"
+                >
+                  Terminal de Carga:
+                </p>
                 <a
                   target="_blank"
                   href="https://www.google.com/maps/place/Dibiagi+Transporte+Internacional+S.A.+Sucursal+Uruguay/@-34.8784877,-56.1493168,17z/data=!3m1!4b1!4m6!3m5!1s0x959f81b8fc61b32d:0x30a916f4a862af24!8m2!3d-34.8784877!4d-56.1493168!16s%2Fg%2F11hdh2rf6t?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
-                  ><p class="small opacity-75 mb-1" data-i18n="footer-uruguay-addr">
+                  ><p
+                    class="small opacity-75 mb-1"
+                    data-i18n="footer-uruguay-addr"
+                  >
                     Bvar. Batlle y Ordoñez 2925, apto 01. Montevideo, Uruguay
                   </p></a
                 >
@@ -772,7 +1157,12 @@
         </div>
       </footer>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="js/translations.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>

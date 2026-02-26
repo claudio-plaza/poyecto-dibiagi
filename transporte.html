@@ -8,13 +8,49 @@
     <!-- Meta SEO -->
     <meta
       name="description"
-      content="Contamos con unidades de negocios versátiles para brindar un servicio integral de transporte de cargas generales, consolidadas y refrigeradas."
+      content="Servicio profesional de transporte de cargas internacionales. Líderes en transporte transandino por el corredor bioceánico hacia Chile y Mercosur."
     />
     <meta
       name="keywords"
-      content="transporte de cargas, cargas generales, cargas consolidadas, cargas refrigeradas, logistica, Dibiagi"
+      content="transporte de cargas, transporte internacional, transporte transandino, corredor bioceánico, empresa de logística, cargas generales, cargas consolidadas, flete internacional, transporte terrestre, carga completa, logística integral, Mendoza, Argentina, Chile, Uruguay, Paraguay, Dibiagi"
     />
     <link rel="canonical" href="https://dibiagi.com/transporte.html" />
+    <!-- Hreflang: Segmentación regional -->
+    <link
+      rel="alternate"
+      hreflang="es-AR"
+      href="https://dibiagi.com/transporte.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es-CL"
+      href="https://dibiagi.com/transporte.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es-PY"
+      href="https://dibiagi.com/transporte.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="es-UY"
+      href="https://dibiagi.com/transporte.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt-BR"
+      href="https://dibiagi.com/transporte.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://dibiagi.com/transporte.html"
+    />
+    <!-- Geo-targeting -->
+    <meta name="geo.region" content="AR-M" />
+    <meta name="geo.placename" content="Mendoza, Argentina" />
+    <meta name="geo.position" content="-32.8895;-68.8458" />
+    <meta name="ICBM" content="-32.8895, -68.8458" />
     <link rel="icon" type="image/png" href="img/favicon-dibiagi.png" />
 
     <!-- Open Graph / Facebook -->
@@ -84,8 +120,73 @@
       media="print"
       onload="this.media = 'all'"
     />
-    <!-- Mi CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Mi CSS (non-blocking) -->
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <!-- Preload Hero Image for LCP -->
+    <link
+      rel="preload"
+      as="image"
+      href="img/transporte de cargas/hero-transporte-de-cargas.jpg"
+      fetchpriority="high"
+    />
+    <!-- Critical CSS Inlined -->
+    <style>
+      :root {
+        --dibiagi-red: #e1211b;
+        --dibiagi-blue: #0b224d;
+      }
+      .header-top-bar {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        min-height: 62px;
+      }
+      .navegador {
+        background-color: #e1211b !important;
+        padding: 0;
+        color: #fff;
+        min-height: 40px;
+      }
+      .hero-section {
+        position: relative;
+        height: 60vh;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        background-color: #000;
+        overflow: hidden;
+      }
+      .hero-img-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        filter: brightness(0.6);
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        margin: 0;
+      }
+      .header-logo {
+        width: 140px;
+        height: 46px;
+        object-fit: contain;
+      }
+      .lang-flag {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -112,6 +213,9 @@
                   class="lang-flag"
                   onclick="changeLanguage('es')"
                   title="Español"
+                  width="24"
+                  height="24"
+                  decoding="async"
                 />
                 <img
                   src="https://flagcdn.com/w40/us.png"
@@ -119,7 +223,20 @@
                   class="lang-flag"
                   onclick="changeLanguage('en')"
                   title="English"
+                  width="24"
+                  height="24"
+                  decoding="async"
                 />
+                <!-- <img
+                  src="https://flagcdn.com/w40/br.png"
+                  alt="PT"
+                  class="lang-flag"
+                  onclick="changeLanguage('pt')"
+                  title="Português"
+                  width="24"
+                  height="24"
+                  decoding="async"
+                /> -->
               </div>
               <div class="contact-item">
                 <span class="contact-label" data-i18n="header-llamanos"
@@ -209,13 +326,31 @@
                     alt="ES"
                     class="lang-flag"
                     onclick="changeLanguage('es')"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <img
                     src="https://flagcdn.com/w40/us.png"
                     alt="EN"
                     class="lang-flag"
                     onclick="changeLanguage('en')"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
                   />
+                  <!-- <img
+                    src="https://flagcdn.com/w40/br.png"
+                    alt="PT"
+                    class="lang-flag"
+                    onclick="changeLanguage('pt')"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                    decoding="async"
+                  /> -->
                 </div>
               </li>
             </ul>
@@ -255,6 +390,7 @@
             </div>
           </div>
         </div>
+        <!--
         <a
           href="https://wa.me/5492615873045"
           target="_blank"
@@ -262,6 +398,7 @@
         >
           <i class="fa-brands fa-whatsapp"></i>
         </a>
+        -->
       </div>
 
       <!-- Flags Section (Same as Hero bottom) -->
@@ -369,6 +506,7 @@
                   width="700"
                   height="450"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -405,6 +543,7 @@
                   width="700"
                   height="450"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -447,6 +586,7 @@
                   width="700"
                   height="450"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -482,6 +622,7 @@
                   width="700"
                   height="450"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -517,6 +658,7 @@
                   width="700"
                   height="450"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -533,6 +675,7 @@
             width="1200"
             height="150"
             loading="lazy"
+            decoding="async"
           />
         </div>
       </section>
@@ -776,7 +919,7 @@
                   <a
                     href="#"
                     class="btn-fleet-primary"
-                    data-vehicle="FURGON TÉRMICO (SERIE I)"
+                    data-vehicle="fleet-furgon-1"
                     data-i18n="trans-btn-cotizar"
                     >Solicitar Cotización</a
                   >
@@ -816,7 +959,7 @@
                   <a
                     href="#"
                     class="btn-fleet-primary"
-                    data-vehicle="FURGON TÉRMICO (SERIE II)"
+                    data-vehicle="fleet-furgon-2-t"
                     data-i18n="trans-btn-cotizar"
                     >Solicitar Cotización</a
                   >
@@ -856,7 +999,7 @@
                   <a
                     href="#"
                     class="btn-fleet-primary"
-                    data-vehicle="FURGON DE ALUMINIO"
+                    data-vehicle="fleet-aluminio-t"
                     data-i18n="trans-btn-cotizar"
                     >Solicitar Cotización</a
                   >
@@ -892,7 +1035,7 @@
                   <a
                     href="#"
                     class="btn-fleet-primary"
-                    data-vehicle="SIDER 96.5M3"
+                    data-vehicle="fleet-sider-2-t"
                     data-i18n="trans-btn-cotizar"
                     >Solicitar Cotización</a
                   >
@@ -929,7 +1072,7 @@
                   <a
                     href="#"
                     class="btn-fleet-primary"
-                    data-vehicle="CAMIÓN CON SEMI"
+                    data-vehicle="fleet-camion-semi-t"
                     data-i18n="trans-btn-cotizar"
                     >Solicitar Cotización</a
                   >
@@ -966,7 +1109,7 @@
                   <a
                     href="#"
                     class="btn-fleet-primary"
-                    data-vehicle="SEMI CAMA BAJA"
+                    data-vehicle="fleet-cama-baja-t"
                     data-i18n="trans-btn-cotizar"
                     >Solicitar Cotización</a
                   >
@@ -1002,7 +1145,7 @@
                   <a
                     href="#"
                     class="btn-fleet-primary"
-                    data-vehicle="CAMIÓN FURGÓN 111"
+                    data-vehicle="fleet-furgon-111-t"
                     data-i18n="trans-btn-cotizar"
                     >Solicitar Cotización</a
                   >
@@ -1039,7 +1182,7 @@
                   <a
                     href="#"
                     class="btn-fleet-primary"
-                    data-vehicle="VOLVO CARGA SOBREDIMENSIONADA"
+                    data-vehicle="fleet-sobredimensionada-t"
                     data-i18n="trans-btn-cotizar"
                     >Solicitar Cotización</a
                   >
@@ -1076,7 +1219,7 @@
                   <a
                     href="#"
                     class="btn-fleet-primary"
-                    data-vehicle="SIDER 2021"
+                    data-vehicle="fleet-sider-2021-t"
                     data-i18n="trans-btn-cotizar"
                     >Solicitar Cotización</a
                   >

@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Agregar el modal al body si no existe
   if (!document.getElementById("cotizacionModal")) {
-    const modalHTML = `
+      const modalHTML = `
         <div class="modal fade" id="cotizacionModal" tabindex="-1" aria-labelledby="cotizacionModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content cotizacion-modal-content">
@@ -60,31 +60,31 @@ document.addEventListener("DOMContentLoaded", function () {
                         <i class="fas fa-times"></i>
                     </button>
                     <div class="modal-body cotizacion-modal-body">
-                        <h2 class="cotizacion-title">Cotizar cargas</h2>
+                        <h2 class="cotizacion-title" data-i18n="modal-cotizar-title">Cotizar cargas</h2>
                         <form id="cotizacionForm">
                             <div class="cotizacion-form-grid">
                                 <!-- Fila 1: Nombre y Apellido | Origen -->
                                 <div class="cotizacion-field">
-                                    <input type="text" class="cotizacion-input" id="cotizacion-name" name="name" placeholder="Nombre y apellido" required>
+                                    <input type="text" class="cotizacion-input" id="cotizacion-name" name="name" placeholder="Nombre y apellido" data-i18n="modal-cotizar-nombre" required>
                                 </div>
                                 <div class="cotizacion-field">
-                                    <input type="text" class="cotizacion-input" id="cotizacion-origen" name="origen" placeholder="Origen" required>
+                                    <input type="text" class="cotizacion-input" id="cotizacion-origen" name="origen" placeholder="Origen" data-i18n="modal-cotizar-origen" required>
                                 </div>
                                 
                                 <!-- Fila 2: Empresa | Destino -->
                                 <div class="cotizacion-field">
-                                    <input type="text" class="cotizacion-input" id="cotizacion-empresa" name="empresa" placeholder="Empresa">
+                                    <input type="text" class="cotizacion-input" id="cotizacion-empresa" name="empresa" placeholder="Empresa" data-i18n="modal-cotizar-empresa">
                                 </div>
                                 <div class="cotizacion-field">
-                                    <input type="text" class="cotizacion-input" id="cotizacion-destino" name="destino" placeholder="Destino" required>
+                                    <input type="text" class="cotizacion-input" id="cotizacion-destino" name="destino" placeholder="Destino" data-i18n="modal-cotizar-destino" required>
                                 </div>
                                 
                                 <!-- Fila 3: Email | Volumen -->
                                 <div class="cotizacion-field">
-                                    <input type="email" class="cotizacion-input" id="cotizacion-email" name="email" placeholder="Email" required>
+                                    <input type="email" class="cotizacion-input" id="cotizacion-email" name="email" placeholder="Email" data-i18n="modal-cotizar-email" required>
                                 </div>
                                 <div class="cotizacion-field">
-                                    <input type="text" class="cotizacion-input" id="cotizacion-volumen" name="volumen" placeholder="Volumen (m2)">
+                                    <input type="text" class="cotizacion-input" id="cotizacion-volumen" name="volumen" placeholder="Volumen (m2)" data-i18n="modal-cotizar-volumen">
                                 </div>
                                 
                                 <!-- Fila 4: Teléfono con bandera | Peso -->
@@ -106,40 +106,40 @@ document.addEventListener("DOMContentLoaded", function () {
                                                   .join("")}
                                             </div>
                                         </div>
-                                        <input type="tel" class="cotizacion-input cotizacion-phone-input" id="cotizacion-phone" name="phone" placeholder="Teléfono" value="+54 ">
+                                        <input type="tel" class="cotizacion-input cotizacion-phone-input" id="cotizacion-phone" name="phone" placeholder="Teléfono" data-i18n="modal-cotizar-telefono" value="+54 ">
                                     </div>
                                 </div>
                                 <div class="cotizacion-field">
-                                    <input type="text" class="cotizacion-input" id="cotizacion-peso" name="peso" placeholder="Peso">
+                                    <input type="text" class="cotizacion-input" id="cotizacion-peso" name="peso" placeholder="Peso" data-i18n="modal-cotizar-peso">
                                 </div>
                                 
                                 <!-- Fila 5: Tipo de carga | Tipo de embalaje -->
                                 <div class="cotizacion-field">
                                     <select class="cotizacion-input cotizacion-select" id="cotizacion-tipoCarga" name="tipoCarga">
-                                        <option value="" selected>Tipo de carga</option>
-                                        <option value="CONSOLIDADA">Consolidada</option>
-                                        <option value="COMPLETA">Completa</option>
-                                        <option value="REFRIGERADA">Refrigerada</option>
-                                        <option value="OTRAS">Otras</option>
+                                        <option value="" selected data-i18n="modal-cotizar-tipo-carga">Tipo de carga</option>
+                                        <option value="CONSOLIDADA" data-i18n="modal-cotizar-carga-consolidada">Consolidada</option>
+                                        <option value="COMPLETA" data-i18n="modal-cotizar-carga-completa">Completa</option>
+                                        <option value="REFRIGERADA" data-i18n="modal-cotizar-carga-refrigerada">Refrigerada</option>
+                                        <option value="OTRAS" data-i18n="modal-cotizar-carga-otras">Otras</option>
                                     </select>
                                 </div>
                                 <div class="cotizacion-field">
-                                    <input type="text" class="cotizacion-input" id="cotizacion-embalaje" name="tipoEmbalaje" placeholder="Tipo de embalaje">
+                                    <input type="text" class="cotizacion-input" id="cotizacion-embalaje" name="tipoEmbalaje" placeholder="Tipo de embalaje" data-i18n="modal-cotizar-tipo-embalaje">
                                 </div>
                                 
                                 <!-- Fila 6: Comentario (ancho completo) -->
                                 <div class="cotizacion-field cotizacion-field-full">
-                                    <textarea class="cotizacion-input cotizacion-textarea" id="cotizacion-comentario" name="comentario" rows="3" placeholder="Comentario"></textarea>
+                                    <textarea class="cotizacion-input cotizacion-textarea" id="cotizacion-comentario" name="comentario" rows="3" placeholder="Comentario" data-i18n="modal-cotizar-comentario"></textarea>
                                 </div>
                             </div>
                             
                             <!-- Botón de envío -->
                             <div class="cotizacion-submit-wrapper">
                                 <button type="submit" class="cotizacion-submit-btn" id="btnEnviarCotizacion">
-                                    <span class="btn-text">Cotizar</span>
+                                    <span class="btn-text" data-i18n="modal-cotizar-btn">Cotizar</span>
                                     <span class="btn-loading" style="display: none;">
                                         <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-                                        Enviando...
+                                        <span data-i18n="modal-cotizar-enviando">Enviando...</span>
                                     </span>
                                 </button>
                             </div>
@@ -152,7 +152,13 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
         `;
+
     document.body.insertAdjacentHTML("beforeend", modalHTML);
+
+    // Traducir el modal recién inyectado
+    if (typeof updateContent === "function") {
+      updateContent();
+    }
   }
 
   // Inicializar lógica de flags para todos los formularios
@@ -230,7 +236,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const commentArea = document.getElementById("cotizacion-comentario");
 
         if (vehicle && commentArea) {
-          commentArea.value = `Solicito cotización para el vehículo: ${vehicle}`;
+          // Detectar idioma actual
+          const lang = localStorage.getItem("language") || "es";
+          
+          // Obtener prefijo traducido
+          const prefix = (translations[lang] && translations[lang]["modal-cotizar-comentario-prefix"]) 
+            || "Solicito cotización para el vehículo: ";
+          
+          // Obtener nombre del vehículo traducido (si el vehicle es una key)
+          const translatedVehicle = (translations[lang] && translations[lang][vehicle]) || vehicle;
+          
+          commentArea.value = `${prefix}${translatedVehicle}`;
         } else if (commentArea) {
           commentArea.value = ""; // Limpiar si es genérico
         }
